@@ -2,7 +2,7 @@
 
 ## About
 
-We implement [BEVFormer](https://arxiv.org/abs/2203.17270) as the baseline model for Track 1. The baseline model is trained on the nuScenes dataset and evaluated on the nuScenes dataset with different corruptions. This codebase provides instructions to evaluate the baseline model.
+We implement [BEVFormer](https://arxiv.org/abs/2203.17270) as the baseline model for Track 1. The baseline model is trained on the nuScenes dataset and evaluated on the nuScenes dataset with different corruptions. This codebase provides instructions to test the baseline model on the RoboDrive Challenge.
 
 ## Preparation
 
