@@ -23,8 +23,8 @@ Please refer to Track-2 [README.md](../track-2/README.md) for more information a
 
 
 ## Track 3: Robust Occupancy Prediction
-To be updated.
 
+Please refer to Track-3 [README.md](../track-3/README.md) for more information about the usage of the toolkit and run baseline models.
 
 ## Track 4: Robust Depth Estimation
 To be updated.
