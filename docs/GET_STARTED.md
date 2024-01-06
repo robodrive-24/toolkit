@@ -14,8 +14,8 @@
 
 
 ## Track 1: Robust BEV Detection
-To be updated.
 
+Please refer to Track-1 [README.md](../track-1/README.md) for more information about the usage of the toolkit and run baseline models.
 
 ## Track 2: Robust Map Segmentation
 To be updated.
