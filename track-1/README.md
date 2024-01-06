@@ -2,7 +2,7 @@
 
 ## About
 
-We implement [BEVFormer](https://arxiv.org/abs/2203.17270) as the baseline model for Track 1. The baseline model is trained on the nuScenes dataset and evaluated on the nuScenes dataset with different corruptions. This codebase provide instructions to evaluate the baseline model.
+We implement [BEVFormer](https://arxiv.org/abs/2203.17270) as the baseline model for Track 1. The baseline model is trained on the nuScenes dataset and evaluated on the nuScenes dataset with different corruptions. This codebase provides instructions to evaluate the baseline model.
 
 ## Preparation
 
@@ -14,7 +14,7 @@ Kindly refer to the [GET_STARTED.md](./BEVFormer/docs/getting_started.md) to set
 
 We use nuScenes train split as the training data and use robodrive dataset as the evaluation data. For training data preparation, please refer to [prepare_dataset.md](./BEVFormer/docs/prepare_dataset.md). 
 
-For evaluation data preparetion, please first download the dataset from [robodrive-release]() and organize folder structure like this:
+For evaluation data preparation, please first download the dataset from [robodrive-release]() and organize the folder structure like this:
 
 ```bash
 .
@@ -93,7 +93,7 @@ for data_info in data_infos:
 
 ## Evaluation
 
-Please upload the generated `results_nusc.json` to the [server]() for evaluation. The upload folder struction should be like this:
+Please upload the generated `results_nusc.json` to the [server]() for evaluation. The upload folder structure should be like this:
 
 ```bash
 .
@@ -130,3 +130,18 @@ Please upload the generated `results_nusc.json` to the [server]() for evaluation
 | ISO Noise         | 0.2505 | 0.1076 | 0.9036 | 0.3045 | 0.5644 | 1.5776 | 0.2607 |
 | Pixelate          | 0.3499 | 0.2668 | 0.8558 | 0.3047 | 0.4907 | 1.1205 | 0.1831 |
 | JPEG              | 0.4304 | 0.2552 | 0.7405 | 0.2798 | 0.2946 | 0.3910 | 0.2666 |
+
+
+## References
+
+Please note that you should cite the corresponding papers once you use the baseline model.
+```bibtex
+@inproceedings{li2022bevformer,
+  title={Bevformer: Learning bird’s-eye-view representation from multi-camera images via spatiotemporal transformers},
+  author={Li, Zhiqi and Wang, Wenhai and Li, Hongyang and Xie, Enze and Sima, Chonghao and Lu, Tong and Qiao, Yu and Dai, Jifeng},
+  booktitle={European conference on computer vision},
+  pages={1--18},
+  year={2022},
+  organization={Springer}
+}
+```
