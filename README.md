@@ -1,11 +1,31 @@
 # RoboDrive Toolkit
 
-Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :robot:
+Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
+
+<p align="center">
+  <img src="docs/figs/cover.png" align="center" width="100%">
+</p>
+
+## About
+
+- `RoboDrive` is one of the first competitions that targeted probing the Out-of-Distribution (OoD) robustness of state-of-the-art autonomous driving perception models, centered around two mainstream topics: **common corruptions** and **sensor failures**.
+- This year's `RoboDrive` challenge is associated with the 41st IEEE Conference on Robotics and Automation ([ICRA 2024](https://2024.ieee-icra.org/)).
+- There are eighteen real-world corruption types in `RoboDrive`, ranging from three perspectives:
+    - Weather and lighting conditions, such as bright, low-light, foggy, and snowy conditions.
+    - Movement and acquisition failures, such as potential blurs caused by vehicle motions.
+    - Data processing issues, such as noises and quantizations happen due to hardware malfunctions.
+- Additionally, we aim to probe the 3D scene perception robustness under camera and LiDAR sensor failures:
+    - Loss of certain camera frames during the driving system sensing process.
+    - Loss of one or more camera views during the driving system sensing process.
+    - Loss of the roof-top LiDAR view during the driving system sensing process.
+- Kindly visit the `RoboDrive` [webpage](https://robodrive-24.github.io/) to explore more details and instructions of this challenge. :blue_car:
+
 
 ## Outline
 - [Changelog](#changelog)
 - [Useful Info](#useful-info)
 - [Timeline](#clock1-timeline)
+- [Challenge Tracks](#challenge-tracks)
 - [Installation](#installation)
 - [Data Preparation](#data-preparation)
 - [Getting Started](#getting-started)
@@ -39,6 +59,18 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :robot:
 - `Mar 31 '24` - Phase `One` deadline.
 - `Apr 30 '24` - Phase `Two` deadline.
 - `May 17 '24` - Award decision announcement @ [ICRA 2024](https://2024.ieee-icra.org/).
+
+
+## Challenge Tracks
+There are **five** tracks in this `RoboDrive` challenge, with emphasis on the following 3D scene perception tasks:
+
+| \# | Task | Description | Server |
+|:-:|:-|:-|:-:|
+| Track `1` | Robust BEV Detection | Evaluating the resilience of detection algorithms against diverse environmental and sensor-based corruptions | [`[Link]`]() |
+| Track `2` | Robust Map Segmentation | Focusing on the segmentation of complex driving scene elements in BEV maps under varied driving conditions | [`[Link]`]() |
+| Track `3` | Robust Occupancy Prediction | Testing the accuracy of occupancy grid predictions in dynamic and unpredictable real-world driving environments | [`[Link]`]() |
+| Track `4` | Robust Depth Estimation | Assessing the depth estimation robustness from multiple perspectives for comprehensive 3D scene perception | [`[Link]`]() |
+| Track `5` | Robust Multi-Modal BEV Detection | Tailored for evaluating the reliability of advanced driving perception systems equipped with multiple types of sensors | [`[Link]`]() |
 
 
 ## Installation
