@@ -2,7 +2,7 @@
 
 ## About
 
-We implement BEVFormer as the baseline model for Track 1. The baseline model is trained on the nuScenes dataset and evaluated on the nuScenes dataset with different corruptions. This codebase provide instructions to evaluate the baseline model.
+We implement [BEVFormer](https://arxiv.org/abs/2203.17270) as the baseline model for Track 1. The baseline model is trained on the nuScenes dataset and evaluated on the nuScenes dataset with different corruptions. This codebase provide instructions to evaluate the baseline model.
 
 ## Preparation
 
@@ -14,7 +14,7 @@ Kindly refer to the [GET_STARTED.md](./BEVFormer/docs/getting_started.md) to set
 
 We use nuScenes train split as the training data and use robodrive dataset as the evaluation data. For training data preparation, please refer to [prepare_dataset.md](./BEVFormer/docs/prepare_dataset.md). 
 
-For evaluation data preparetion, please first download the dataset from [RoboDrive]() and organize folder structure like this:
+For evaluation data preparetion, please first download the dataset from [robodrive-release]() and organize folder structure like this:
 
 ```bash
 .
