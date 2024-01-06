@@ -42,7 +42,10 @@ It is recommended to use the **absolute dataset path** when generating the `.pkl
 
 
 ## Evaluation Data
-To be updated.
+
+Please download the camera-corruption dataset for track-1 to track-4 from [Google Drive](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link).
+
+[To be updated] Please download the sensor-corruption dataset for track-5 from [Google Drive]()
 
 
 
