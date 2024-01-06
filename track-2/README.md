@@ -14,7 +14,7 @@ Kindly refer to the [installation.md](BEVerse/docs/installation.md) to set up en
 
 We use nuScenes train split as the training data and use RoboDrive dataset as the evaluation data. For training data preparation, please refer to [prepare_dataset.md](BEVerse/docs/data_preparation.md). 
 
-For evaluation data preparation, please first download the dataset from [robodrive-release](), then run the following command to generate the evaluation `.pkl` file. You can also download the generated `robodrive_infos_test.pkl` file in [Google Drive](). The final folder structure like this:
+For evaluation data preparation, please first download the dataset from [robodrive-release](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link), then run the following command to generate the evaluation `.pkl` file. You can also download the generated `robodrive_infos_test.pkl` file in [Google Drive](https://drive.google.com/drive/folders/1fd1SCkS2uB1l4PS8S5Le1i4q32X2u8PQ?usp=drive_link). The final folder structure like this:
 
 ```bash
 bash tools/create_data.sh

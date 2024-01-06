@@ -28,7 +28,7 @@ For evaluation data preparation, please first download the dataset from [robodri
 └── tools
 ```
 
-Then run the following command to generate the evaluation dataset. You can also download the `robodrive_infos_temporal_test.pkl` file from [Google Drive]().
+Then run the following command to generate the evaluation dataset. You can also download the `robodrive_infos_temporal_test.pkl` file from [Google Drive](https://drive.google.com/drive/folders/1rbpRKTsFhQc-Una53hixKgZjo0PM0bSL?usp=drive_link).
 
 ```bash
 bash tools/create_data.sh

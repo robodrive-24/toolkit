@@ -14,13 +14,13 @@ Kindly refer to the [install.md](./SurroundOcc/docs/install.md) to set up enviro
 
 We use nuScenes train split as the training data and use robodrive dataset as the evaluation data. For training data preparation, please refer to [data.md](./SurroundOcc/docs/data.md). 
 
-For evaluation data preparetion, please first download the dataset from [robodrive-release]() and then run the following command to generate the evaluation dataset:
+For evaluation data preparetion, please first download the dataset from [robodrive-release](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) and then run the following command to generate the evaluation dataset:
 
 ```bash
 bash tools/create_data.sh
 ```
 
-You can also download the generated `robodrive_infos_temporal_test.pkl` file in [Google Drive](). The final folder structure like this:
+You can also download the generated `robodrive_infos_temporal_test.pkl` file in [Google Drive](https://drive.google.com/drive/folders/1oIIK7ZaIB02-rkbBG84lt3n0bjtQ7Er4?usp=drive_link). The final folder structure like this:
 
 ```bash
 .
