@@ -59,7 +59,7 @@ If you find this competition helpful for your research, please kindly consider c
 ```bibtex
 @article{xie2023robobev,
     title = {RoboBEV: Towards Robust Bird's Eye View Perception under Corruptions},
-    author = {Xie, Shaoyuan and Kong, Lingdong and Zhang, Wenwei and Ren, Jiawei and Pan, Liang and Chen, Kai and Liu, Ziwei},
+    author = {Shaoyuan Xie and Lingdong Kong and Wenwei Zhang and Jiawei Ren and Liang Pan and Kai Chen and Ziwei Liu},
     journal = {arXiv preprint arXiv:2304.06719}, 
     year = {2023}
 }
@@ -68,7 +68,7 @@ If you find this competition helpful for your research, please kindly consider c
 ```bibtex
 @inproceedings{kong2023robodepth,
     title = {RoboDepth: Robust Out-of-Distribution Depth Estimation under Corruptions},
-    author = {Kong, Lingdong and Xie, Shaoyuan and Hu, Hanjiang and Ng, Lai Xing and Cottereau, Benoit R. and Ooi, Wei Tsang},
+    author = {Lingdong Kong and Shaoyuan Xie and Hanjiang Hu and Lai Xing Ng and Benoit R. Cottereau and Wei Tsang Ooi},
     booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
     year = {2023},
 }
@@ -76,8 +76,8 @@ If you find this competition helpful for your research, please kindly consider c
 
 ```bibtex
 @inproceedings{kong2023robo3d,
-    author = {Lingdong Kong and Youquan Liu and Xin Li and Runnan Chen and Wenwei Zhang and Jiawei Ren and Liang Pan and Kai Chen and Ziwei Liu},
     title = {Robo3D: Towards Robust and Reliable 3D Perception against Corruptions},
+    author = {Lingdong Kong and Youquan Liu and Xin Li and Runnan Chen and Wenwei Zhang and Jiawei Ren and Liang Pan and Kai Chen and Ziwei Liu},
     booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
     pages = {19994--20006},
     year = {2023},
