@@ -35,7 +35,9 @@
 
 
 ## :red_car: Training Data
-In this competition, all participants are expected to adopt the [nuScenes](https://www.nuscenes.org/nuscenes) dataset for model training.
+In this competition, all participants are expected to adopt the **official** [nuScenes](https://www.nuscenes.org/nuscenes) dataset from [Motional](https://motional.com/) for model training.
+
+:warning: **Note:** Additional data sources are NOT allowed in this competition.
 
 ### Download
 
@@ -102,17 +104,66 @@ Prepare the `.pkl` files for [nuScenes](https://www.nuscenes.org/nuscenes) train
 python tools/create_data.py nuscenes --root-path ./data/sets/nuscenes --out-dir ./data/sets/nuscenes --extra-tag nuscenes
 ```
 
-:warning: Note: It is recommended to use the **absolute dataset path** when generating these `.pkl` files.
+:warning: **Note:** It is recommended to use the **absolute dataset path** when generating these `.pkl` files.
 
 Alternatively, we have provided offline generated `.pkl` files at [this](https://mmdetection3d.readthedocs.io/en/latest/user_guides/dataset_prepare.html#summary-of-annotation-files) link. You can download these files and place them under `data/sets/nuscenes/`. 
 
 
 ## :blue_car: Evaluation Data
 
-Please download the camera-corruption dataset for track-1 to track-4 from [Google Drive](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link).
+In this competition, all participants are expected to adopt our **robustness probing sets** for model evaluation.
 
-[To be updated] Please download the sensor-corruption dataset for track-5 from [Google Drive]()
+### Download
+- For Tracks `1` to `4`: Please download the camera-corruption sets from [this](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) Google Drive link.
+- [To be updated] For Track `5`: Please download the sensor-corruption sets from [this]() Google Drive link.
 
+Unpack the compressed file(s) into `/data/sets/robodrive-release` and your folder structure should end up looking like this:
+
+```shell
+└── robodrive-release
+    │
+    ├── brightness
+    │   └── samples  <- contains the .jpg files from surrounding cameras 
+    │       ├── CAM_BACK
+    │       ├── CAM_BACK_LEFT
+    │       ├── CAM_BACK_RIGHT
+    │       ├── CAM_FRONT
+    │       ├── CAM_FRONT
+    │       └── CAM_FRONT
+    │
+    ├── color_quant
+    ├── contrast
+    ├── dark
+    ├── defocus_blur
+    ├── elastic_transform
+    ├── fog
+    ├── frost
+    ├── gaussian_noise
+    ├── glass_blur
+    ├── impulse_noise
+    ├── iso_noise
+    ├── jpeg_compression
+    ├── motion_blur
+    ├── pixelate
+    ├── shot_noise
+    ├── snow
+    ├── zoom_blur
+    │
+    ├── robodrive-v1.0-test
+    │   ├── Usual files (e.g. attribute.json, calibrated_sensor.json etc.)
+    │   ├── lidarseg.json  <- contains the mapping of each .bin file to the token   
+    │   └── category.json  <- contains the categories of the labels (note that the 
+    │                         category.json from nuScenes v1.0 is overwritten)
+    │
+    └── sample_scenes.pkl
+```
+
+There are **18 corruption types** in total, therefore, you should find the same number of folders that contain the camera-corruption data.
+
+
+### Prepare for Evaluation
+
+We have prepared the `sample_scenes.pkl` file for model evaluation. Kindly refer to your `/data/sets/robodrive-release` folder.
 
 
 ## References
