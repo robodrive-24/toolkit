@@ -26,9 +26,9 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 
 ## :rainbow: Venue
 
-> The `RoboDrive` challenge is affiliated with the 41st IEEE Conference on Robotics and Automation ([ICRA 2024](https://2024.ieee-icra.org/)).
+> This competition is affiliated with the 41st IEEE Conference on Robotics and Automation ([ICRA 2024](https://2024.ieee-icra.org/)).
 
-><img src="https://robodrive-24.github.io/icra2024.png" width="18%"/><br/>
+><img src="https://robodrive-24.github.io/icra2024.png" width="19%"/><br/>
 
 > ICRA is the IEEE Robotics and Automation Society's flagship conference. ICRA 2024 will be held from May 13th to 17th, 2024, in Yokohama, Japan.
 
@@ -41,6 +41,7 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 - [Useful Info](#information_source-useful-info)
 - [Timeline](#clock1-timeline)
 - [Challenge Tracks](#blue_car-challenge-tracks)
+- [Awards](#1st_place_medal-awards)
 - [Data Preparation](#hotsprings-data-preparation)
 - [Getting Started](#rocket-getting-started)
 - [Citation](#citation)
@@ -89,6 +90,10 @@ There are **five** tracks in this `RoboDrive` challenge, with emphasis on the fo
 | Track `3` | Robust Occupancy Prediction | Testing the accuracy of occupancy grid predictions in dynamic and unpredictable real-world driving environments | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-3/README.md) | [Link] |
 | Track `4` | Robust Depth Estimation | Assessing the depth estimation robustness from multiple perspectives for comprehensive 3D scene perception | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-4/README.md) | [Link] |
 | Track `5` | Robust Multi-Modal BEV Detection | Tailored for evaluating the reliability of advanced driving perception systems equipped with multiple types of sensors | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-5/README.md) | [Link] |
+
+
+## :1st_place_medal: Awards
+To be announced.
 
 
 ## :hotsprings: Data Preparation
