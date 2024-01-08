@@ -114,55 +114,64 @@ To ensure a fair comparison among all participants, we require:
 | | |
 |:-:|:-|
 | :thinking: | **Q1:** ***"How can I register a valid team for this competition?"*** |
-| :blue_car: | **A1:** To register a team, kindly fill in [this](https://forms.gle/hnaezVhEycPAjUD78) Google Form. The registration period is from `now` till the deadline of phase one, i.e., `Mar 31 '24`. |
+| :blue_car: | **A1:**  To register a team, kindly fill in [this](https://forms.gle/hnaezVhEycPAjUD78) Google Form. The registration period is from `now` till the deadline of phase one, i.e., `Mar 31 '24`. |
 |  |
 |  |
 | :thinking: | **Q2:** ***"Are there any restrictions for the registration? For example, the number of team members."*** |
-| :blue_car: | **A2:** Each team leader should make a **valid** registration for his/her team. Each participant can only be registered by **one** team. There is no restriction on the number of team members in a team.
+| :blue_car: | **A2:**  Each team leader should make a **valid** registration for his/her team. Each participant can only be registered by **one** team. This is no restriction on the number of team members in a team.
 |  |
 |  |
-| :thinking: | **Q3:** ***"How many tracks can I participate in?"*** |
-| :blue_car: | **A3:** Each team can participate in **at most two tracks** in this competition. |
+| :thinking: | **Q3:** ***"Whether team members can be changed during the competition?"*** |
+| :blue_car: | **A3:**  No. You **CANNOT** change the list of team members after the registration. You must register again as a **new** team if you need to add or remove any members of your team. |
 |  |
 |  |
-| :thinking: | **Q4:** ***"What can I expect from this competition?"*** |
-| :blue_car: | **A4:** We provide the winning teams from each track with **cash awards** :moneybag: and **certificates** :1st_place_medal:. The winning solutions will be summarized as a **technical report** :book:. An example of last year's technical report can be found [here](https://arxiv.org/abs/2307.15061).
+| :thinking: | **Q4:** ***"How many tracks can I participate in?"*** |
+| :blue_car: | **A4:**  Each team can participate in **at most two tracks** in this competition. |
 |  |
 |  |
-| :thinking: | **Q5:** ***“Can I use additional data resources for model training?"*** |
-| :blue_car: | **A5:** No. All participants must follow the **same** data preparation procedures as listed in [DATA_PREPARE.md](https://github.com/robodrive-24/toolkit/blob/main/docs/DATA_PREPARE.md). Additional data sources are **NOT** allowed in this competition.
+| :thinking: | **Q5:** ***"What can I expect from this competition?"*** |
+| :blue_car: | **A5:**  We provide the winning teams from each track with **cash awards** :moneybag: and **certificates** :1st_place_medal:. The winning solutions will be summarized as a **technical report** :book:. An example of last year's technical report can be found [here](https://arxiv.org/abs/2307.15061).
 |  |
 |  |
-| :thinking: | **Q6:** ***"Can I use corruption augmentations during model training?"*** |
-| :blue_car: | **A6:** No. The theme of this competition is to probe the **out-of-distribution robustness** of autonomous driving perception models. Therefore, all participants must **REFRAIN** from using any corruption simulations as data augmentations during the model training, including any atomic operation that comprises any one of the corruptions in this competition.
+| :thinking: | **Q6:** ***“Can I use additional data resources for model training?"*** |
+| :blue_car: | **A6:**  No. All participants must follow the **SAME** data preparation procedures as listed in [DATA_PREPARE.md](https://github.com/robodrive-24/toolkit/blob/main/docs/DATA_PREPARE.md). Additional data sources are **NOT** allowed in this competition.
 |  |
 |  |
-| :thinking: | **Q7:** ***"How should I configurate the model training? Are there any restrictions on model size, image size, loss function, optimizer, number of epochs, and so on?"***
-| :blue_car: | **A7:** We provide one **baseline model** for each track in [GET_STARTED.md](https://github.com/robodrive-24/toolkit/blob/main/docs/GET_STARTED.md). The participants are recommended to refer to these baselines as the starting point in configuring the model training. There is no restriction on normal model training configurations, including model size, image size, loss function, optimizer, and number of epochs. 
+| :thinking: | **Q7:** ***"Can I use corruption augmentations during model training?"*** |
+| :blue_car: | **A7:**  No. The theme of this competition is to probe the **out-of-distribution robustness** of autonomous driving perception models. Therefore, all participants must **REFRAIN** from using any corruption simulations as data augmentations during the model training, including any atomic operation that comprises any one of the corruptions in this competition.
 |  |
 |  |
-| :thinking: | **Q8:** ***"Can I use LiDAR data for Tracks `1` to `4`?"*** |
-| :blue_car: | **A8:** No. Tracks `1` to `4` are **single-modality** tracks that only involve the use of camera data. The goal of these tracks is to probe the robustness of perception models under camera-related corruptions. Participants who are interested in **multi-modal robustness** (camera + LiDAR) can refer to Track `5` in this competition.
+| :thinking: | **Q8:** ***"How should I configurate the model training? Are there any restrictions on model size, image size, loss function, optimizer, number of epochs, and so on?"***
+| :blue_car: | **A8:**  We provide one **baseline model** for each track in [GET_STARTED.md](https://github.com/robodrive-24/toolkit/blob/main/docs/GET_STARTED.md). The participants are recommended to refer to these baselines as the starting point in configuring the model training. There is no restriction on normal model training configurations, including model size, image size, loss function, optimizer, and number of epochs. 
 |  |
 |  |
-| :thinking: | **Q9:** ***"Is it permissible to use self-supervised model pre-training (such as MoCo and MAE)?"*** |
-| :blue_car: | **A9:** Yes. The use of **self-supervised** pre-trained models is possible. Such models may include [MoCo](https://arxiv.org/abs/1911.05722), [MoCo v2](https://arxiv.org/abs/2003.04297), [MAE](https://arxiv.org/abs/2111.06377), [DINO](https://github.com/facebookresearch/dino), and many others. Please make sure to acknowledge (in your code and report) if you use any pre-trained models.
+| :thinking: | **Q9:** ***"Can I use LiDAR data for Tracks `1` to `4`?"*** |
+| :blue_car: | **A9:**  No. Tracks `1` to `4` are **single-modality** tracks that only involve the use of camera data. The goal of these tracks is to probe the robustness of perception models under camera-related corruptions. Participants who are interested in **multi-modal robustness** (camera + LiDAR) can refer to Track `5` in this competition.
 |  |
 |  |
-| :thinking: | **Q10:** ***"Can I use large models (such as SAM) to generate pre-training or auxiliary annotations?"*** |
-| :blue_car: | **A10:** No. The use of large foundation models, such as [CLIP](https://github.com/openai/CLIP), [SAM](https://segment-anything.com/), [SEEM](https://github.com/UX-Decoder/Segment-Everything-Everywhere-All-At-Once), and any other similar models, is **NOT** allowed in this competition. This is to ensure a relatively fair comparing environment among different teams. Any violations of this rule will be regarded as **cheating** and the results will be canceled.
+| :thinking: | **Q10:** ***"Is it permissible to use self-supervised model pre-training (such as MoCo and MAE)?"*** |
+| :blue_car: | **A10:**  Yes. The use of **self-supervised** pre-trained models is possible. Such models may include [MoCo](https://arxiv.org/abs/1911.05722), [MoCo v2](https://arxiv.org/abs/2003.04297), [MAE](https://arxiv.org/abs/2111.06377), [DINO](https://github.com/facebookresearch/dino), and many others. Please make sure to acknowledge (in your code and report) if you use any pre-trained models.
 |  |
 |  |
-| :thinking: | **Q11:** ***"Can I combine the training and validation sets for model training?"*** |
-| :blue_car: | **A11:**  Although we do **NOT** recommend participants using validation data for model training, it is possible to include both `train` and `val` splits during model training, as long as the training does **NOT** involve: (1) data from the robustness proving sets, (2) corruption augmentations, and (3) violations of other rules as listed in FAQ.  
+| :thinking: | **Q11:** ***"Can I use large models (such as SAM) to generate pre-training or auxiliary annotations?"*** |
+| :blue_car: | **A11:**  No. The use of large foundation models, such as [CLIP](https://github.com/openai/CLIP), [SAM](https://segment-anything.com/), [SEEM](https://github.com/UX-Decoder/Segment-Everything-Everywhere-All-At-Once), and any other similar models, is **NOT** allowed in this competition. This is to ensure a relatively fair comparing environment among different teams. Any violations of this rule will be regarded as **cheating** and the results will be canceled.
 |  |
 |  |
-| :thinking: | **Q12:** ***"Can I use model ensembling and test-time augmentation (TTA)?"*** |
-| :blue_car: | **A12:**  Like many other academic competitions, it is possible to use **model ensembling** and **test-time augmentation (TTA)** to enhance the model when preparing the submissions. The participants **SHOULD** include necessary details for the use of model ensembling and TTA in their code and reports.
+| :thinking: | **Q12:** ***"Are there any restrictions on the use of pre-trained weights (such as DD3D, ImageNet, COCO, ADE20K, Object365, and so on)?"*** |
+| :blue_car: | **A12:**  To be updated.
+|  |
+|  |
+| :thinking: | **Q13:** ***"Can I combine the training and validation sets for model training?"*** |
+| :blue_car: | **A13:**  Although we do **NOT** recommend participants using validation data for model training, it is possible to include both `train` and `val` splits during model training, as long as the training does **NOT** involve: (1) data from the robustness proving sets, (2) corruption augmentations, and (3) violations of other rules as listed in FAQ.  
+|  |
+|  |
+| :thinking: | **Q14:** ***"Can I use model ensembling and test-time augmentation (TTA)?"*** |
+| :blue_car: | **A14:**  Like many other academic competitions, it is possible to use **model ensembling** and **test-time augmentation (TTA)** to enhance the model when preparing the submissions. The participants **SHOULD** include necessary details for the use of model ensembling and TTA in their code and reports.
 |  |
 |  |
 | :thinking: | ... |
 | :blue_car: | ... |
+
 
 ### Contact
 :mailbox: Didn't find a related FAQ to your questions? Let us know (robodrive.2024@gmail.com)!
