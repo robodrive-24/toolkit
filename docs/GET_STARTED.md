@@ -137,5 +137,26 @@ To ensure a fair comparison among all participants, we require:
 | :blue_car: | **A6:** No. The theme of this competition is to probe the **out-of-distribution robustness** of autonomous driving perception models. Therefore, all participants must **REFRAIN** from using any corruption simulations as data augmentations during the model training, including any atomic operation that comprises any one of the corruptions in this competition.
 |  |
 |  |
+| :thinking: | **Q7:** ***"How should I configurate the model training? Are there any restrictions on model size, image size, loss function, optimizer, number of epochs, and so on?"***
+| :blue_car: | **A7:** We provide one **baseline model** for each track. The participants are recommended to refer to these baselines as the starting point in configuring the model training. There is no restriction on normal model training configurations, including model size, image size, loss function, optimizer, and number of epochs. 
+|  |
+|  |
+| :thinking: | **Q8:** ***"Can I use LiDAR data for Tracks `1` to `4`?"*** |
+| :blue_car: | **A8:** No. Tracks `1` to `4` are **single-modality** tracks that only involve the use of camera data. The goal of these tracks is to probe the robustness of perception models under camera-related corruptions. Participants who are interested in **multi-modal robustness** (camera + LiDAR) can refer to Track `5` in this competition.
+|  |
+|  |
+| :thinking: | **Q9:** ***"Is it permissible to use self-supervised model pre-training (such as MoCo and MAE)?"*** |
+| :blue_car: | **A9:** Yes. The use of **self-supervised** pre-trained models is possible. Such models may include [MoCo](https://arxiv.org/abs/1911.05722), [MoCo v2](https://arxiv.org/abs/2003.04297), [MAE](https://arxiv.org/abs/2111.06377), [DINO](https://github.com/facebookresearch/dino), and many others. Please make sure to acknowledge (in your code and report) if you use any pre-trained models.
+|  |
+|  |
+| :thinking: | **Q10:** ***"Can I use large models (such as SAM) to generate pre-training or auxiliary annotations?"*** |
+| :blue_car: | **A10:** ...
+|  |
+|  |
+| :thinking: | ... |
+| :blue_car: | ... |
+
+### Contact
+:mailbox: Didn't find a related FAQ to your questions? Let us know (robodrive.2024@gmail.com)!
 
 
