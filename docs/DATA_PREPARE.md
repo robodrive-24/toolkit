@@ -2,7 +2,11 @@
 
 - [Overall Structure](#overall-structure)
 - [Training Data](#red_car-training-data)
+    - [Download](#download)
+    - [Prepare for Training](#prepare-for-training)
 - [Evaluation Data](#blue_car-evaluation-data)
+    - [Download](#download)
+    - [Prepare for Evaluation](#prepare-for-evaluation)
 - [References](#references)
 
 
