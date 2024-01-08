@@ -9,34 +9,34 @@
 Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 
 
-### About
-`RoboDrive` is one of the first competitions that targeted probing the Out-of-Distribution (OoD) robustness of state-of-the-art autonomous driving perception models, centered around two mainstream topics: **common corruptions** and **sensor failures**.
+## :oncoming_automobile: About
+> `RoboDrive` is one of the first competitions that targeted probing the Out-of-Distribution (OoD) robustness of state-of-the-art autonomous driving perception models, centered around two mainstream topics: **common corruptions** and **sensor failures**.
 
-There are eighteen real-world corruption types in total, ranging from three perspectives:
-  - Weather and lighting conditions, such as bright, low-light, foggy, and snowy conditions.
-  - Movement and acquisition failures, such as potential blurs caused by vehicle motions.
-  - Data processing issues, such as noises and quantizations happen due to hardware malfunctions.
+> There are eighteen real-world corruption types in total, ranging from three perspectives:
+>  - Weather and lighting conditions, such as bright, low-light, foggy, and snowy conditions.
+>  - Movement and acquisition failures, such as potential blurs caused by vehicle motions.
+>  - Data processing issues, such as noises and quantizations happen due to hardware malfunctions.
 
-Additionally, we aim to probe the 3D scene perception robustness under camera and LiDAR sensor failures:
-  - Loss of certain camera frames during the driving system sensing process.
-  - Loss of one or more camera views during the driving system sensing process.
-  - Loss of the roof-top LiDAR view during the driving system sensing process.
+> Additionally, we aim to probe the 3D scene perception robustness under camera and LiDAR sensor failures:
+>  - Loss of certain camera frames during the driving system sensing process.
+>  - Loss of one or more camera views during the driving system sensing process.
+>  - Loss of the roof-top LiDAR view during the driving system sensing process.
 
-Kindly visit the `RoboDrive` [webpage](https://robodrive-24.github.io/) to explore more details and instructions of this challenge. :blue_car:
+> Kindly visit the `RoboDrive` [webpage](https://robodrive-24.github.io/) to explore more details and instructions of this challenge. :blue_car:
 
-### Venue
+## :rainbow: Venue
 
-The `RoboDrive` challenge is affiliated with the 41st IEEE Conference on Robotics and Automation ([ICRA 2024](https://2024.ieee-icra.org/)).
+> The `RoboDrive` challenge is affiliated with the 41st IEEE Conference on Robotics and Automation ([ICRA 2024](https://2024.ieee-icra.org/)).
 
 ><img src="https://robodrive-24.github.io/icra2024.png" width="18%"/><br/>
 
-ICRA is IEEE Robotics and Automation Society's flagship conference. ICRA 2024 will be held from May 13th to 17th, 2024, in Yokohama, Japan.
+> ICRA is the IEEE Robotics and Automation Society's flagship conference. ICRA 2024 will be held from May 13th to 17th, 2024, in Yokohama, Japan.
 
-The ICRA competitions provide a unique venue for state-of-the-art technical demonstrations from research labs throughout academia and industry. For additional details, kindly refer to the ICRA 2024 [website](https://2024.ieee-icra.org/).
+> The ICRA competitions provide a unique venue for state-of-the-art technical demonstrations from research labs throughout academia and industry. For additional details, kindly refer to the ICRA 2024 [website](https://2024.ieee-icra.org/).
 
 
 
-## Outline
+# Outline
 - [Changelog](#memo-changelog)
 - [Useful Info](#information_source-useful-info)
 - [Timeline](#clock1-timeline)
