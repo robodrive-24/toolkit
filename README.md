@@ -1,4 +1,5 @@
 # RoboDrive Toolkit
+<img src="https://visitor-badge.laobi.icu/badge?page_id=robodrive-24.toolkit&left_color=gray&right_color=blue">
 
 Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 
@@ -10,7 +11,7 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 
 - `RoboDrive` is one of the first competitions that targeted probing the Out-of-Distribution (OoD) robustness of state-of-the-art autonomous driving perception models, centered around two mainstream topics: **common corruptions** and **sensor failures**.
 - This year's `RoboDrive` challenge is associated with the 41st IEEE Conference on Robotics and Automation ([ICRA 2024](https://2024.ieee-icra.org/)).
-- There are eighteen real-world corruption types in `RoboDrive`, ranging from three perspectives:
+- There are eighteen real-world corruption types in total, ranging from three perspectives:
     - Weather and lighting conditions, such as bright, low-light, foggy, and snowy conditions.
     - Movement and acquisition failures, such as potential blurs caused by vehicle motions.
     - Data processing issues, such as noises and quantizations happen due to hardware malfunctions.
