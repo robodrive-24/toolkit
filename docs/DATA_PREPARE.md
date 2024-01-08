@@ -1,47 +1,113 @@
 # Data Preparation
 
 - [Overall Structure](#overall-structure)
-- [Training Data](#training-data)
-- [Evaluation Data](#evaluation-data)
+- [Training Data](#red_car-training-data)
+- [Evaluation Data](#blue_car-evaluation-data)
 - [References](#references)
 
 
 ## Overall Structure
-```
+```shell
 └── data 
     └── sets
-        │── nuscenes
-        └── nuscenes-c        
+        │
+        ├── nuscenes
+        │   ├── maps
+        │   ├── samples
+        │   ├── sweeps
+        │   ├── lidarseg
+        │   ├── v1.0-{mini, test, trainval}
+        │   ├── ...
+        │   ├── nuscenes_infos_train.pkl
+        │   └── nuscenes_infos_val.pkl
+        │
+        └── robodrive-release
+            ├── brightness
+            ├── color_quant
+            ├── contrast
+            ├── ...
+            ├── zoom_blur
+            ├── ...
+            ├── robodrive-v1.0-test
+            └── sample_scenes.pkl
 ```
 
 
 
-## Training Data
+## :red_car: Training Data
 In this competition, all participants are expected to adopt the [nuScenes](https://www.nuscenes.org/nuscenes) dataset for model training.
 
-To install the [nuScenes](https://www.nuscenes.org/nuscenes) dataset, download the data, annotations, and other files from https://www.nuscenes.org/download. Unpack the compressed file(s) into `/data/sets/nuscenes` and your folder structure should end up looking like this:
+### Download
 
+To install the [nuScenes](https://www.nuscenes.org/nuscenes) dataset, download the data, annotations, and other files from https://www.nuscenes.org/download. 
+
+Alternatively, you can download the [nuScenes](https://www.nuscenes.org/nuscenes) dataset from [OpenDataLab](https://opendatalab.com/) using MIM. The downloading and unzipping command scripts are the following scripts:
+
+```shell
+# install OpenDataLab CLI tools
+pip install -U opendatalab
 ```
-└── nuscenes  
-    ├── Usual nuscenes folders (i.e. samples, sweep)
+```shell
+# log in OpenDataLab
+# note that you should register an account on [OpenDataLab](https://opendatalab.com).
+pip install odl
+odl login
+```
+```shell
+# download and preprocess by MIM
+mim download mmdet3d --dataset nuscenes
+```
+
+Unpack the compressed file(s) into `/data/sets/nuscenes` and your folder structure should end up looking like this:
+
+```shell
+└── nuscenes
+    │ 
+    ├── maps
+    │ 
+    ├── samples  <- contains the image, point cloud, and other data.
+    │   ├── CAM_BACK
+    │   ├── CAM_BACK_LEFT
+    │   ├── CAM_BACK_RIGHT
+    │   ├── CAM_FRONT
+    │   ├── CAM_FRONT
+    │   ├── CAM_FRONT
+    │   ├── ...
+    │   ├── LIDAR_TOP
+    │   └── ...
+    │
+    ├── sweeps
     │
     ├── lidarseg
-    │   └── v1.0-{mini, test, trainval} <- contains the .bin files; a .bin file 
-    │                                      contains the labels of the points in a 
-    │                                      point cloud (note that v1.0-test does not 
-    │                                      have any .bin files associated with it)
+    │   └── v1.0-{mini, test, trainval}  <- contains the .bin files; a .bin file 
+    │                                       contains the labels of the points in a 
+    │                                       point cloud (note that v1.0-test does not 
+    │                                       have any .bin files associated with it)
     │
-    └── v1.0-{mini, test, trainval}
-        ├── Usual files (e.g. attribute.json, calibrated_sensor.json etc.)
-        ├── lidarseg.json  <- contains the mapping of each .bin file to the token   
-        └── category.json  <- contains the categories of the labels (note that the 
-                              category.json from nuScenes v1.0 is overwritten)
+    │── v1.0-{mini, test, trainval}
+    │   ├── Usual files (e.g. attribute.json, calibrated_sensor.json etc.)
+    │   ├── lidarseg.json  <- contains the mapping of each .bin file to the token   
+    │   └── category.json  <- contains the categories of the labels (note that the 
+    │                         category.json from nuScenes v1.0 is overwritten)
+    │
+    ├── nuscenes_infos_train.pkl
+    └── nuscenes_infos_val.pkl
 ```
 
-It is recommended to use the **absolute dataset path** when generating the `.pkl` annotation files.
+### Prepare for Training
+
+Prepare the `.pkl` files for [nuScenes](https://www.nuscenes.org/nuscenes) training by running the following script:
+
+```shell
+python tools/create_data.py nuscenes --root-path ./data/sets/nuscenes --out-dir ./data/sets/nuscenes --extra-tag nuscenes
+```
+
+:warning: Note: It is recommended to use the **absolute dataset path** when generating these `.pkl` files.
+
+Alternatively, we have provided offline generated `.pkl` files at [this](https://mmdetection3d.readthedocs.io/en/latest/user_guides/dataset_prepare.html#summary-of-annotation-files) link. You can download these files and place them under `data/sets/nuscenes/`. 
 
 
-## Evaluation Data
+## :blue_car: Evaluation Data
 
 Please download the camera-corruption dataset for track-1 to track-4 from [Google Drive](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link).
 
