@@ -126,7 +126,7 @@ To ensure a fair comparison among all participants, we require:
 |  |
 |  |
 | :thinking: | **Q4:** ***"What can I expect from this competition?"*** |
-| :blue_car: | **A4:** We provide the winning teams from each track with **cash awards** :moneybag: and **certificates** :trophy:. The winning solutions will be summarized as a **technical report** :book:. An example of last year's technical report can be found [here](https://arxiv.org/abs/2307.15061).
+| :blue_car: | **A4:** We provide the winning teams from each track with **cash awards** :moneybag: and **certificates** :1st_place_medal:. The winning solutions will be summarized as a **technical report** :book:. An example of last year's technical report can be found [here](https://arxiv.org/abs/2307.15061).
 |  |
 |  |
 | :thinking: | **Q5:** ***“Can I use additional data resources for model training?"*** |
