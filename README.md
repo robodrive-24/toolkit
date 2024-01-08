@@ -74,7 +74,7 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 > **Note:** All timestamps are in the `AoE` (Anywhere on Earth) format.
 - `Dec 25 '23` - Team Up; Register for your team by filling in [this](https://forms.gle/hnaezVhEycPAjUD78) Google Form. 
 - `Jan 05 '24` - Release of training and evaluation data.
-- `Jan 10 '24` - Competition servers online @ [EvalAI](https://eval.ai/).
+- `Jan 15 '24` - Competition servers online @ [EvalAI](https://eval.ai/).
 - `Mar 31 '24` - Phase `One` deadline.
 - `Apr 30 '24` - Phase `Two` deadline.
 - `May 17 '24` - Award decision announcement @ [ICRA 2024](https://2024.ieee-icra.org/).
