@@ -40,6 +40,8 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 
 
 ## Changelog
+- `Jan 08 '24` - A list of *Frequently Asked Questions* has been summarized on [this](https://github.com/robodrive-24/toolkit/blob/main/docs/GET_STARTED.md#frequently-asked-questions
+) page.
 - `Jan 06 '24` - Instructions, baseline models, and results of Tracks `1` to `3` have been released.
 - `Jan 05 '24` - Training and evaluation data of Tracks `1` to `4` have been released.
 - `Dec 25 '23` - Register for your team by filling in [this](https://forms.gle/hnaezVhEycPAjUD78) Google Form.
