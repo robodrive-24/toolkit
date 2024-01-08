@@ -35,6 +35,7 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 - [License](#license)
 - [Sponsor](#sponsor)
 - [Terms & Conditions](#balance_scale-terms--conditions)
+- [Frequently Asked Questions](#frequently-asked-questions)
 - [Acknowledgements](#acknowledgements)
 
 
@@ -136,6 +137,58 @@ To ensure a fair comparison among all participants, we require:
 1. All participants must follow the exact same data configuration when training and evaluating their algorithms. Please do not use any public or private datasets other than those specified for model training.
 2. The theme of this competition is to probe the out-of-distribution robustness of autonomous driving perception models. Therefore, any use of the corruption and sensor failure types designed in this benchmark is strictly prohibited, including any atomic operation that comprises any one of the mentioned corruptions.
 3. To ensure the above two rules are followed, each participant is requested to submit the code with reproducible results before the final result is announced; the code is for examination purposes only and we will manually verify the training and evaluation of each participant's model.
+
+
+## Frequently Asked Questions
+
+| | |
+|:-:|:-|
+| :thinking: | **Q1:** ***"How can I register a valid team for this competition?"*** |
+| :blue_car: | **A1:** To register a team, kindly fill in [this](https://forms.gle/hnaezVhEycPAjUD78) Google Form. The registration period is from `now` till the deadline of phase one, i.e., `Mar 31 '24`. |
+|  |
+|  |
+| :thinking: | **Q2:** ***"Are there any restrictions for the registration? For example, the number of team members."*** |
+| :blue_car: | **A2:** Each team leader should make a **valid** registration for his/her team. Each participant can only be registered by **one** team. This is no restriction on the number of team members in a team.
+|  |
+|  |
+| :thinking: | **Q3:** ***"How many tracks can I participate in?"*** |
+| :blue_car: | **A3:** Each team can participate in **at most two tracks** in this competition. |
+|  |
+|  |
+| :thinking: | **Q4:** ***"What can I expect from this competition?"*** |
+| :blue_car: | **A4:** We provide the winning teams from each track with **cash awards** :moneybag: and **certificates** :trophy:. The winning solutions will be summarized as a **technical report** :book:. An example of last year's technical report can be found [here](https://arxiv.org/abs/2307.15061).
+|  |
+|  |
+| :thinking: | **Q5:** ***“Can I use additional data resources for model training?"*** |
+| :blue_car: | **A5:** No. All participants must follow the **same** data preparation procedures as listed in [DATA_PREPARE.md](https://github.com/robodrive-24/toolkit/blob/main/docs/DATA_PREPARE.md). Additional data sources are **NOT** allowed in this competition.
+|  |
+|  |
+| :thinking: | **Q6:** ***"Can I use corruption augmentations during model training?"*** |
+| :blue_car: | **A6:** No. The theme of this competition is to probe the **out-of-distribution robustness** of autonomous driving perception models. Therefore, all participants must **REFRAIN** from using any corruption simulations as data augmentations during the model training, including any atomic operation that comprises any one of the corruptions in this competition.
+|  |
+|  |
+| :thinking: | **Q7:** ***"How should I configurate the model training? Are there any restrictions on model size, image size, loss function, optimizer, number of epochs, and so on?"***
+| :blue_car: | **A7:** We provide one **baseline model** for each track. The participants are recommended to refer to these baselines as the starting point in configuring the model training. There is no restriction on normal model training configurations, including model size, image size, loss function, optimizer, and number of epochs. 
+|  |
+|  |
+| :thinking: | **Q8:** ***"Can I use LiDAR data for Tracks `1` to `4`?"*** |
+| :blue_car: | **A8:** No. Tracks `1` to `4` are **single-modality** tracks that only involve the use of camera data. The goal of these tracks is to probe the robustness of perception models under camera-related corruptions. Participants who are interested in **multi-modal robustness** (camera + LiDAR) can refer to Track `5` in this competition.
+|  |
+|  |
+| :thinking: | **Q9:** ***"Is it permissible to use self-supervised model pre-training (such as MoCo and MAE)?"*** |
+| :blue_car: | **A9:** Yes. The use of **self-supervised** pre-trained models is possible. Such models may include [MoCo](https://arxiv.org/abs/1911.05722), [MoCo v2](https://arxiv.org/abs/2003.04297), [MAE](https://arxiv.org/abs/2111.06377), [DINO](https://github.com/facebookresearch/dino), and many others. Please make sure to acknowledge (in your code and report) if you use any pre-trained models.
+|  |
+|  |
+| :thinking: | **Q10:** ***"Can I use large models (such as SAM) to generate pre-training or auxiliary annotations?"*** |
+| :blue_car: | **A10:** ...
+|  |
+|  |
+| :thinking: | ... |
+| :blue_car: | ... |
+
+### Contact
+:mailbox: Didn't find a related FAQ to your questions? Let us know (robodrive.2024@gmail.com)!
+
 
 
 ## Acknowledgements
