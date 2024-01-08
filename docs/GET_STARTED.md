@@ -4,9 +4,9 @@
   - [Track 1: Robust BEV Detection](#red_car-track-1-robust-bev-detection)
   - [Track 2: Robust Map Segmentation](#blue_car-track-2-robust-map-segmentation)
   - [Track 3: Robust Occupancy Prediction](#taxi-track-3-robust-occupancy-prediction)
-  - [Track 4: Robust Depth Estimation](#track-4-robust-depth-estimation)
+  - [Track 4: Robust Depth Estimation](#minibus-track-4-robust-depth-estimation)
 - [Challenge Two: Sensor Failures]()
-  - [Track 5: Robust Multi-Modal BEV Detection](#track-5-robust-multi-modal-bev-detection)
+  - [Track 5: Robust Multi-Modal BEV Detection](#truck-track-5-robust-multi-modal-bev-detection)
 - [Rules & Conditions](#rules--conditions)
 - [Frequently Asked Questions]()
 
@@ -29,6 +29,8 @@ The first challenge topic contains **18 real-world corruption types**, ranging f
 | :octocat: | **Baseline Codebase** | https://github.com/fundamentalvision/BEVFormer |
 | :bar_chart: | **Baseline Results** | To be updated |
 
+Participants of Track `1` can refer to the above resources for more details and instructions.
+
 
 ## :blue_car: Track 2: Robust Map Segmentation
 
@@ -40,6 +42,8 @@ The first challenge topic contains **18 real-world corruption types**, ranging f
 | :gear: | **Baseline** | [BEVerse](https://arxiv.org/abs/2205.09743) |
 | :octocat: | **Baseline Codebase** | https://github.com/zhangyp15/BEVerse |
 | :bar_chart: | **Baseline Results** | To be updated |
+
+Participants of Track `2` can refer to the above resources for more details and instructions.
 
 
 ## :taxi: Track 3: Robust Occupancy Prediction
@@ -53,18 +57,21 @@ The first challenge topic contains **18 real-world corruption types**, ranging f
 | :octocat: | **Baseline Codebase** | https://github.com/weiyithu/SurroundOcc |
 | :bar_chart: | **Baseline Results** | To be updated |
 
+Participants of Track `3` can refer to the above resources for more details and instructions.
 
-## Track 4: Robust Depth Estimation
+
+## :minibus: Track 4: Robust Depth Estimation
 
 | \# | Task | Robust Depth Estimation |
 |:-:|:-|:-|
-| :taxi: | **Description** | Assessing the depth estimation robustness from multiple perspectives for comprehensive 3D scene perception |
+| :minibus: | **Description** | Assessing the depth estimation robustness from multiple perspectives for comprehensive 3D scene perception |
 | :page_facing_up: | **Document & Instruction** | [`track-4/README.md`](https://github.com/robodrive-24/toolkit/blob/main/track-4/README.md)
 | :house: | **Server** | To be updated |
 | :gear: | **Baseline** | [SurroundDepth](https://arxiv.org/abs/2204.03636) |
 | :octocat: | **Baseline Codebase** | https://github.com/weiyithu/SurroundDepth |
 | :bar_chart: | **Baseline Results** | To be updated |
 
+Participants of Track `4` can refer to the above resources for more details and instructions.
 
 
 # Challenge Two: Sensor Failures
@@ -74,17 +81,18 @@ The second challenge topic aims to probe the 3D scene perception robustness unde
   - Loss of one or more camera views during the driving system sensing process.
   - Loss of the roof-top LiDAR view during the driving system sensing process.
 
-## Track 5: Robust Multi-Modal BEV Detection
+## :truck: Track 5: Robust Multi-Modal BEV Detection
 
 | \# | Task | Robust Multi-Modal BEV Detection |
 |:-:|:-|:-|
-| :taxi: | **Description** | Tailored for evaluating the reliability of advanced driving perception systems equipped with multiple types of sensors |
+| :truck: | **Description** | Tailored for evaluating the reliability of advanced driving perception systems equipped with multiple types of sensors |
 | :page_facing_up: | **Document & Instruction** | [`track-5/README.md`](https://github.com/robodrive-24/toolkit/blob/main/track-5/README.md)
 | :house: | **Server** | To be updated |
 | :gear: | **Baseline** | To be updated |
 | :octocat: | **Baseline Codebase** | To be updated |
 | :bar_chart: | **Baseline Results** | To be updated |
 
+Participants of Track `5` can refer to the above resources for more details and instructions.
 
 
 # Rules & Conditions
