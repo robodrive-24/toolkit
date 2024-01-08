@@ -180,7 +180,15 @@ To ensure a fair comparison among all participants, we require:
 |  |
 |  |
 | :thinking: | **Q10:** ***"Can I use large models (such as SAM) to generate pre-training or auxiliary annotations?"*** |
-| :blue_car: | **A10:** ...
+| :blue_car: | **A10:** No. The use of large foundation models, such as [CLIP](https://github.com/openai/CLIP), [SAM](https://segment-anything.com/), [SEEM](https://github.com/UX-Decoder/Segment-Everything-Everywhere-All-At-Once), and any other similar models, is **NOT** allowed in this competition. This is to ensure a relatively fair comparing environment among different teams. Any violations of this rule will be regarded as **cheating** and the results will be canceled.
+|  |
+|  |
+| :thinking: | **Q11:** ***"Can I combine the training and validation sets for model training?"*** |
+| :blue_car: | **A11:**  Although we do **NOT** recommend participants using validation data for model training, it is possible to include both `train` and `val` splits during model training, as long as the training does **NOT** involve: (1) data from the robustness proving sets, (2) corruption augmentations, and (3) violations of other rules as listed in FAQ.  
+|  |
+|  |
+| :thinking: | **Q12:** ***"Can I use model ensembling and test-time augmentation (TTA)?"*** |
+| :blue_car: | **A12:**  Like many other academic competitions, it is possible to use **model ensembling** and **test-time augmentation (TTA)** to enhance the model when preparing the submissions. The participants **SHOULD** include necessary details for the use of model ensembling and TTA in their code and reports.
 |  |
 |  |
 | :thinking: | ... |
