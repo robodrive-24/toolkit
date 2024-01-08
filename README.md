@@ -25,21 +25,21 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 
 
 ## Outline
-- [Changelog](#changelog)
-- [Useful Info](#useful-info)
+- [Changelog](#memo-changelog)
+- [Useful Info](#information_source-useful-info)
 - [Timeline](#clock1-timeline)
-- [Challenge Tracks](#challenge-tracks)
-- [Data Preparation](#data-preparation)
-- [Getting Started](#getting-started)
+- [Challenge Tracks](#blue_car-challenge-tracks)
+- [Data Preparation](#hotsprings-data-preparation)
+- [Getting Started](#rocket-getting-started)
 - [Citation](#citation)
 - [License](#license)
-- [Sponsor](#sponsor)
+- [Sponsor](#heart-sponsor)
 - [Terms & Conditions](#balance_scale-terms--conditions)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Acknowledgements](#acknowledgements)
+- [Frequently Asked Questions](#thinking-frequently-asked-questions)
+- [Acknowledgements](#ok_man-acknowledgements)
 
 
-## Changelog
+## :memo: Changelog
 - `Jan 08 '24` - A list of *Frequently Asked Questions* has been summarized on [this](https://github.com/robodrive-24/toolkit/blob/main/docs/GET_STARTED.md#frequently-asked-questions
 ) page.
 - `Jan 06 '24` - Instructions, baseline models, and results of Tracks `1` to `3` have been released.
@@ -48,7 +48,7 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 - `Dec 01 '23` - Launch of [The RoboDrive Challenge](https://robodrive-24.github.io/) at [ICRA 2024](https://2024.ieee-icra.org/). More info coming soon!
 
 
-## Useful Info
+## :information_source: Useful Info
 | \# | Item | Link |
 |:-:|:-|:-|
 | :globe_with_meridians: | Competition Webpage | https://robodrive-24.github.io |
@@ -67,7 +67,7 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 - `May 17 '24` - Award decision announcement @ [ICRA 2024](https://2024.ieee-icra.org/).
 
 
-## Challenge Tracks
+## :blue_car: Challenge Tracks
 There are **five** tracks in this `RoboDrive` challenge, with emphasis on the following 3D scene perception tasks:
 
 | \# | Task | Description | Doc | Server |
@@ -79,11 +79,11 @@ There are **five** tracks in this `RoboDrive` challenge, with emphasis on the fo
 | Track `5` | Robust Multi-Modal BEV Detection | Tailored for evaluating the reliability of advanced driving perception systems equipped with multiple types of sensors | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-5/README.md) | [Link] |
 
 
-## Data Preparation
+## :hotsprings: Data Preparation
 Kindly refer to [DATA_PREPARE.md](docs/DATA_PREPARE.md) for the details to prepare the training and evaluation data.
 
 
-## Getting Started
+## :rocket: Getting Started
 Kindly refer to [GET_STARTED.md](docs/GET_STARTED.md) to learn more usage of this toolkit.
 
 
@@ -125,7 +125,7 @@ If you find this competition helpful for your research, please kindly consider c
 This competition is under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 
-## Sponsor
+## :heart: Sponsor
 To be updated.
 
 
@@ -141,7 +141,7 @@ To ensure a fair comparison among all participants, we require:
 3. To ensure the above two rules are followed, each participant is requested to submit the code with reproducible results before the final result is announced; the code is for examination purposes only and we will manually verify the training and evaluation of each participant's model.
 
 
-## Frequently Asked Questions
+## :thinking: Frequently Asked Questions
 
 | | |
 |:-:|:-|
@@ -158,7 +158,7 @@ To ensure a fair comparison among all participants, we require:
 |  |
 |  |
 | :thinking: | **Q4:** ***"What can I expect from this competition?"*** |
-| :blue_car: | **A4:** We provide the winning teams from each track with **cash awards** :moneybag: and **certificates** :trophy:. The winning solutions will be summarized as a **technical report** :book:. An example of last year's technical report can be found [here](https://arxiv.org/abs/2307.15061).
+| :blue_car: | **A4:** We provide the winning teams from each track with **cash awards** :moneybag: and **certificates** :1st_place_medal:. The winning solutions will be summarized as a **technical report** :book:. An example of last year's technical report can be found [here](https://arxiv.org/abs/2307.15061).
 |  |
 |  |
 | :thinking: | **Q5:** ***“Can I use additional data resources for model training?"*** |
@@ -201,7 +201,7 @@ To ensure a fair comparison among all participants, we require:
 
 
 
-## Acknowledgements
+## :ok_man: Acknowledgements
 This competition is developed based on the [RoboBEV](https://github.com/Daniel-xsy/RoboBEV), [RoboDepth](https://github.com/ldkong1205/RoboDepth), and [Robo3D](https://github.com/ldkong1205/Robo3D) projects.
 
 This competition toolkit is developed based on the [MMDetection3D](https://github.com/open-mmlab/mmdetection3d) codebase.
