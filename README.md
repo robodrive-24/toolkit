@@ -26,7 +26,6 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 - [Useful Info](#useful-info)
 - [Timeline](#clock1-timeline)
 - [Challenge Tracks](#challenge-tracks)
-- [Installation](#installation)
 - [Data Preparation](#data-preparation)
 - [Getting Started](#getting-started)
 - [Citation](#citation)
@@ -37,7 +36,8 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 
 
 ## Changelog
-- `Jan 05 '24` - Training and evaluation data released.
+- `Jan 06 '24` - Instructions, baseline models, and results of Tracks `1` to `3` have been released.
+- `Jan 05 '24` - Training and evaluation data of Tracks `1` to `4` have been released.
 - `Dec 25 '23` - Register for your team by filling in [this](https://forms.gle/hnaezVhEycPAjUD78) Google Form.
 - `Dec 01 '23` - Launch of [The RoboDrive Challenge](https://robodrive-24.github.io/) at [ICRA 2024](https://2024.ieee-icra.org/). More info coming soon!
 
@@ -64,17 +64,13 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 ## Challenge Tracks
 There are **five** tracks in this `RoboDrive` challenge, with emphasis on the following 3D scene perception tasks:
 
-| \# | Task | Description | Server |
-|:-:|:-|:-|:-:|
-| Track `1` | Robust BEV Detection | Evaluating the resilience of detection algorithms against diverse environmental and sensor-based corruptions | [`[Link]`]() |
-| Track `2` | Robust Map Segmentation | Focusing on the segmentation of complex driving scene elements in BEV maps under varied driving conditions | [`[Link]`]() |
-| Track `3` | Robust Occupancy Prediction | Testing the accuracy of occupancy grid predictions in dynamic and unpredictable real-world driving environments | [`[Link]`]() |
-| Track `4` | Robust Depth Estimation | Assessing the depth estimation robustness from multiple perspectives for comprehensive 3D scene perception | [`[Link]`]() |
-| Track `5` | Robust Multi-Modal BEV Detection | Tailored for evaluating the reliability of advanced driving perception systems equipped with multiple types of sensors | [`[Link]`]() |
-
-
-## Installation
-Kindly refer to [INSTALL.md](docs/INSTALL.md) for the installation details.
+| \# | Task | Description | Doc | Server |
+|:-:|:-|:-|:-:|:-:|
+| Track `1` | Robust BEV Detection | Evaluating the resilience of detection algorithms against diverse environmental and sensor-based corruptions | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-1/README.md) | [Link] |
+| Track `2` | Robust Map Segmentation | Focusing on the segmentation of complex driving scene elements in BEV maps under varied driving conditions | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-2/README.md) | [Link] |
+| Track `3` | Robust Occupancy Prediction | Testing the accuracy of occupancy grid predictions in dynamic and unpredictable real-world driving environments | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-3/README.md) | [Link] |
+| Track `4` | Robust Depth Estimation | Assessing the depth estimation robustness from multiple perspectives for comprehensive 3D scene perception | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-4/README.md) | [Link] |
+| Track `5` | Robust Multi-Modal BEV Detection | Tailored for evaluating the reliability of advanced driving perception systems equipped with multiple types of sensors | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-5/README.md) | [Link] |
 
 
 ## Data Preparation
