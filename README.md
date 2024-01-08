@@ -1,11 +1,13 @@
 # RoboDrive Toolkit
+<a href="https://robodrive-24.github.io/" target='_blank'><img src="https://img.shields.io/badge/Website-%F0%9F%94%97-lightblue"></a>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=robodrive-24.toolkit&left_color=gray&right_color=blue">
-
-Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 
 <p align="center">
   <img src="docs/figs/cover.png" align="center" width="100%">
 </p>
+
+Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
+
 
 ## About
 
