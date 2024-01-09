@@ -4,7 +4,7 @@
 [![slack](https://img.shields.io/badge/slack-%F0%9F%94%97-blue)](https://join.slack.com/t/robodrive/shared_invite/zt-29fnp2iye-QZtwxSdCchil6noIiTxoXg)
 [![wechat](https://img.shields.io/badge/wechat-%F0%9F%94%97-lightblue)](https://robodrive-24.github.io/wechat_qr.jpg)
 <img src="https://visitor-badge.laobi.icu/badge?page_id=robodrive-24.toolkit&left_color=gray&right_color=blue">
-[![ICRA2024](https://img.shields.io/badge/ICRA2024-&#129302;-darkred)](https://2024.ieee-icra.org/)
+[![ICRA2024](https://img.shields.io/badge/icra2024-&#129302;-lightblue)](https://2024.ieee-icra.org/)
 
 <p align="center">
   <img src="docs/figs/cover.png" align="center" width="100%">
