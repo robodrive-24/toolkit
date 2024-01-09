@@ -1,5 +1,5 @@
 # RoboDrive Toolkit
-[![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com/vladkurenkov/status/1669361090550177793)
+[![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com/RoboDrive2024)
 [![website](https://img.shields.io/badge/website-%F0%9F%94%97-lightblue)](https://robodrive-24.github.io/)
 [![slack](https://img.shields.io/badge/slack-%F0%9F%94%97-blue)](https://join.slack.com/t/robodrive/shared_invite/zt-29fnp2iye-QZtwxSdCchil6noIiTxoXg)
 [![wechat](https://img.shields.io/badge/wechat-%F0%9F%94%97-lightblue)](https://robodrive-24.github.io/wechat_qr.jpg)
