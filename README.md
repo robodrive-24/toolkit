@@ -215,7 +215,7 @@ To ensure a fair comparison among all participants, we require:
 |  |
 |  |
 | :thinking: | **Q13:** ***"Can I combine the training and validation sets for model training?"*** |
-| :blue_car: | **A13:**  Although we do **NOT** recommend participants using validation data for model training, it is possible to include both `train` and `val` splits during model training, as long as the training does **NOT** involve: (1) data from the robustness proving sets, (2) corruption augmentations, and (3) violations of other rules as listed in FAQ.  
+| :blue_car: | **A13:**  [Updated]. It is strictly **NOT** allowed to use the validation data for model training. All participants **MUST** follow the nuScenes official `train` split during model training and **REFRAIN** from involving any samples from the validation set. Any violations of this rule will be regarded as **cheating** and the results will be canceled.
 |  |
 |  |
 | :thinking: | **Q14:** ***"Can I use model ensembling and test-time augmentation (TTA)?"*** |
