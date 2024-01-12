@@ -70,7 +70,7 @@ cd BEVFusion
 bash tools/test_corruption.sh
 ```
 
-Please upload the generated `results_nusc.json` to the [server]() for evaluation. You can use the command to convert folder structure:
+Please upload the generated `results_nusc.json` to the [server]() for evaluation.
 
 
 ## Customized Dataset
