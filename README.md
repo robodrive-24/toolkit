@@ -57,6 +57,9 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 
 
 ## :memo: Changelog
+
+- `Jan 12 '24` - Instructions, baseline models, and results of Track `5` have been released.
+- `Jan 12 '24` - Training and evaluation data of Track `5` have been released.
 - `Jan 08 '24` - A list of *Frequently Asked Questions* has been summarized on [this](https://github.com/robodrive-24/toolkit/blob/main/docs/GET_STARTED.md#frequently-asked-questions
 ) page.
 - `Jan 06 '24` - Instructions, baseline models, and results of Tracks `1` to `3` have been released.
