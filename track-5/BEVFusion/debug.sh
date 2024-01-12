@@ -1,0 +1,1 @@
+sudo nvidia-docker run -it -v `pwd`/../data:/dataset -p 5678:5678 --shm-size 16g bevfusion /bin/bash -c "python -m debugpy --listen 0.0.0.0:5678 --wait-for-client torchpack dist-run -np 2 python tools/test.py configs/nuscenes/det/transfusion/secfpn/camera+lidar/swint_v0p075/convfuser.yaml pretrained/bevfusion-seg.pth --eval bbox"
