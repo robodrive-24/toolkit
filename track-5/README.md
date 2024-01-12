@@ -66,8 +66,8 @@ Please refer to [README.md](BEVFusion/README.md).
 Simply run the following command to evaluate the baseline model on the corruption dataset.
 
 ```bash
-cd BEVFormer
-bash multi-modal/BEVFusion/tools/test_corruption.sh
+cd BEVFusion
+bash tools/test_corruption.sh
 ```
 
 Please upload the generated `results_nusc.json` to the [server]() for evaluation. You can use the command to convert folder structure:
