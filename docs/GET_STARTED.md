@@ -38,10 +38,10 @@ Participants of Track `1` can refer to the above resources for more details and 
 |:-:|:-|:-|
 | :blue_car: | **Description** | Focusing on the segmentation of complex driving scene elements in BEV maps under varied driving conditions |
 | :page_facing_up: | **Document & Instruction** | [`track-2/README.md`](https://github.com/robodrive-24/toolkit/blob/main/track-2/README.md)
-| :house: | **Evaluation Server** | To be updated |
+| :house: | **Evaluation Server** | https://codalab.lisn.upsaclay.fr/competitions/17062 |
 | :gear: | **Baseline** | [BEVerse](https://arxiv.org/abs/2205.09743) |
 | :octocat: | **Baseline Codebase** | https://github.com/zhangyp15/BEVerse |
-| :bar_chart: | **Baseline Results** | To be updated |
+| :bar_chart: | **Baseline Results** | mIoU = 17.33% |
 
 Participants of Track `2` can refer to the above resources for more details and instructions.
 
