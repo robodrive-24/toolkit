@@ -58,10 +58,10 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 
 ## :memo: Changelog
 
+- `Jan 15 '24` - The [evaluation server](https://codalab.lisn.upsaclay.fr/competitions/17062) of Track `2` is online.
 - `Jan 12 '24` - Instructions, baseline models, and results of Track `5` have been released.
 - `Jan 12 '24` - Training and evaluation data of Track `5` have been released.
-- `Jan 08 '24` - A list of *Frequently Asked Questions* has been summarized on [this](https://github.com/robodrive-24/toolkit/blob/main/docs/GET_STARTED.md#frequently-asked-questions
-) page.
+- `Jan 08 '24` - A list of Frequently Asked Questions ([FAQs](https://github.com/robodrive-24/toolkit/blob/main/docs/GET_STARTED.md#frequently-asked-questions)) has been summarized for better clarity.
 - `Jan 06 '24` - Instructions, baseline models, and results of Tracks `1` to `3` have been released.
 - `Jan 05 '24` - Training and evaluation data of Tracks `1` to `4` have been released.
 - `Dec 25 '23` - Register for your team by filling in [this](https://forms.gle/hnaezVhEycPAjUD78) Google Form.
@@ -81,7 +81,7 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 > **Note:** All timestamps are in the `AoE` (Anywhere on Earth) format.
 - `Dec 25 '23` - Team Up; Register for your team by filling in [this](https://forms.gle/hnaezVhEycPAjUD78) Google Form. 
 - `Jan 05 '24` - Release of training and evaluation data.
-- `Jan 15 '24` - Competition servers online @ [EvalAI](https://eval.ai/).
+- `Jan 15 '24` - Competition servers online @ [CodaLab](https://codalab.lisn.upsaclay.fr/) / [EvalAI](https://eval.ai/).
 - `Mar 31 '24` - Phase `One` deadline.
 - `Apr 30 '24` - Phase `Two` deadline.
 - `May 17 '24` - Award decision announcement @ [ICRA 2024](https://2024.ieee-icra.org/).
@@ -93,7 +93,7 @@ There are **five** tracks in this `RoboDrive` challenge, with emphasis on the fo
 | \# | Task | Description | Doc | Server |
 |:-:|:-|:-|:-:|:-:|
 | Track `1` | Robust BEV Detection | Evaluating the resilience of detection algorithms against diverse environmental and sensor-based corruptions | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-1/README.md) | [Link] |
-| Track `2` | Robust Map Segmentation | Focusing on the segmentation of complex driving scene elements in BEV maps under varied driving conditions | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-2/README.md) | [Link] |
+| Track `2` | Robust Map Segmentation | Focusing on the segmentation of complex driving scene elements in BEV maps under varied driving conditions | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-2/README.md) | [`[Link]`](https://codalab.lisn.upsaclay.fr/competitions/17062) |
 | Track `3` | Robust Occupancy Prediction | Testing the accuracy of occupancy grid predictions in dynamic and unpredictable real-world driving environments | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-3/README.md) | [Link] |
 | Track `4` | Robust Depth Estimation | Assessing the depth estimation robustness from multiple perspectives for comprehensive 3D scene perception | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-4/README.md) | [Link] |
 | Track `5` | Robust Multi-Modal BEV Detection | Tailored for evaluating the reliability of advanced driving perception systems equipped with multiple types of sensors | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-5/README.md) | [Link] |
