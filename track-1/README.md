@@ -14,7 +14,7 @@ Kindly refer to the [GET_STARTED.md](./BEVFormer/docs/getting_started.md) to set
 
 We use nuScenes train split as the training data and use robodrive dataset as the evaluation data. For training data preparation, please refer to [prepare_dataset.md](./BEVFormer/docs/prepare_dataset.md). 
 
-For evaluation data preparation, please first download the dataset from [robodrive-release]() and organize the folder structure like this:
+For evaluation data preparation, please first download the dataset from [robodrive-release](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) and organize the folder structure like this:
 
 ```bash
 .
