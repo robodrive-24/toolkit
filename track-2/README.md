@@ -53,7 +53,7 @@ cd BEVerse
 bash tools/dist_test_corruption.sh
 ```
 
-Please upload the generated `results.pkl` to the [server]() for evaluation. Each `results.pkl` is a dictionary, the key is `sample_idx` and the value is `np.ndarray`. The upload folder structure should be like this:
+The generated results are in the following folder, Each `results.pkl` is a dictionary, the key is `sample_idx` and the value is `np.ndarray`.
 
 ```bash
 .
@@ -67,6 +67,13 @@ Please upload the generated `results.pkl` to the [server]() for evaluation. Each
 ├── snow
 └── zoom_blur
 ```
+
+Finally, convert all the results into one `pred.pkl` file by runing the following script. Compress the file into a `.zip` file and upload to the [server](https://codalab.lisn.upsaclay.fr/competitions/17062) for evaluation. 
+> Note: the result file should be named as `pred.pkl` and the `.zip` file can be named as you like.
+```bash
+python ./tools/convert_submit.py
+``` 
+
 
 ### Customized Dataset
 
