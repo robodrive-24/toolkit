@@ -95,6 +95,7 @@ Finally, please merge all the `json` file into one `pred.json` file and compress
 python ./tools/convert_submit.py
 ```
 
+We also provide the baseline submission file demo [here](https://drive.google.com/drive/folders/1rbpRKTsFhQc-Una53hixKgZjo0PM0bSL?usp=drive_link). Feel free to download for reference and learn how to submit the results.
 
 ## Customized Dataset
 
