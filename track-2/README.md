@@ -112,13 +112,13 @@ The generated results will be saved in the folder structure as follows. Each `re
 └── zoom_blur
 ```
 
-Next, kindly merge all the `.json` files into a **single** `pred.json` file and zip compress it.
+Next, kindly merge all the `.pkl` files into a **single** `pred.pkl` file and zip compress it.
 
 You can merge the results using the following command:
 ```bash
 python ./tools/convert_submit.py
 ```
-> **:warning: Note:** The prediction file **MUST** be named as `pred.json`. The `.zip` file can be named as you like.
+> **:warning: Note:** The prediction file **MUST** be named as `pred.pkl`. The `.zip` file can be named as you like.
 
 Finally, upload the compressed file to Track `2`'s [evaluation server](https://codalab.lisn.upsaclay.fr/competitions/17062) for model evaluation.
 
