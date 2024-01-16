@@ -51,7 +51,7 @@ Next, run the following command to generate the `.pkl` file for the evaluation s
 bash tools/create_data.sh
 ```
 
-> **:blue_car: Hint:** You can also download our generated `rrobodrive_infos_test.pkl` file from [this](https://drive.google.com/drive/u/4/folders/1fd1SCkS2uB1l4PS8S5Le1i4q32X2u8PQ) Google Drive link.
+> **:blue_car: Hint:** You can download our generated `rrobodrive_infos_test.pkl` file from [this](https://drive.google.com/drive/u/4/folders/1fd1SCkS2uB1l4PS8S5Le1i4q32X2u8PQ) Google Drive link.
 
 
 The `nuscenes` folder should end up looking like this:
