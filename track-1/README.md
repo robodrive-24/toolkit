@@ -1,20 +1,32 @@
 # Track 1 - Robust BEV Detection
 
-## About
+- [Preparation](#gear-preparation)
+  - [Installation](#installation)
+  - [Dataset](#dataset)
+- [Getting Started](#rocket-getting-started)
+  - [Training](#training)
+  - [Evaluation](#evaluation)
+- [Customized Dataset](#customized-dataset)
+- [Baseline Results](#baseline-results)
+- [References](#references)
 
-We implement [BEVFormer](https://arxiv.org/abs/2203.17270) as the baseline model for Track 1. The baseline model is trained on the nuScenes dataset and evaluated on the nuScenes dataset with different corruptions. This codebase provides instructions to test the baseline model on the RoboDrive Challenge.
 
-## Preparation
+## :gear: Preparation
+
+We implemented [BEVFormer](https://arxiv.org/abs/2203.17270) as the baseline model for Track `1`. The baseline model is trained on the official `train` split of the nuScenes dataset and evaluated on our robustness probing sets under different corruptions.
+
+This codebase provides instructions for the reproduction of the baseline model in the RoboDrive Challenge.
+
 
 ### Installation
 
-Kindly refer to the [GET_STARTED.md](./BEVFormer/docs/getting_started.md) to set up environments and download the checkpoints. 
+Kindly refer to [GET_STARTED.md](./BEVFormer/docs/getting_started.md) to set up environments and download necessary checkpoints. 
 
 ### Dataset
 
-We use nuScenes train split as the training data and use robodrive dataset as the evaluation data. For training data preparation, please refer to [prepare_dataset.md](./BEVFormer/docs/prepare_dataset.md). 
+We use data under the nuScenes `train` split as the training set and the RoboDrive robustness probing data as the evaluation set. For training data preparation, please refer to [PREPARE_DATASET.md](./BEVFormer/docs/prepare_dataset.md). 
 
-For evaluation data preparation, please first download the dataset from [robodrive-release](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) and organize the folder structure like this:
+For evaluation data preparation, kindly download the dataset from [this](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) Google Drive link and organize the folder structure like as follows:
 
 ```bash
 .
@@ -28,13 +40,16 @@ For evaluation data preparation, please first download the dataset from [robodri
 └── tools
 ```
 
-Then run the following command to generate the evaluation dataset. You can also download the `robodrive_infos_temporal_test.pkl` file from [Google Drive](https://drive.google.com/drive/folders/1rbpRKTsFhQc-Una53hixKgZjo0PM0bSL?usp=drive_link).
+Next, run the following command to generate the `.pkl` file for the evaluation sets:
 
 ```bash
 bash tools/create_data.sh
 ```
 
-The nuscenes folder should be like this:
+**:blue_car: Hint:** You can also download our generated `robodrive_infos_temporal_test.pkl` file from [this](https://drive.google.com/drive/folders/1rbpRKTsFhQc-Una53hixKgZjo0PM0bSL?usp=drive_link) Google Drive link.
+
+
+The `nuscenes` folder should be like this:
 
 ```bash
 .
@@ -57,15 +72,16 @@ The nuscenes folder should be like this:
 ├── v1.0-trainval
 ```
 
-## Getting Started
 
-### Train
+## :rocket: Getting Started
 
-Please refer to [getting_started.md](./BEVFormer/docs/getting_started.md).
+### Training
 
-### Eval
+Kindly refer to [GETTING_STARTED.md](./BEVFormer/docs/getting_started.md) for the instructions regarding model training.
 
-Simply run the following command to evaluate the baseline model on the corruption dataset.
+### Evaluation
+
+Simply run the following command to evaluate the trained baseline model on the RoboDrive robustness probing sets:
 
 ```bash
 cd BEVFormer
@@ -87,19 +103,24 @@ The generated results will be saved in the folder like this:
 └── zoom_blur
 ```
 
-Finally, please merge all the `json` file into one `pred.json` file and compress it into `.zip` file. Then, upload to the server [server](https://codalab.lisn.upsaclay.fr/competitions/17135) for evaluation. You can merge the results using the following command:
+Next, kindly merge all the `.json` files into a **single** `pred.json` file and zip compress it.
 
-> Note: the result file should be named as `pred.json` and the `.zip` file can be named as you like.
+You can merge the results using the following command:
 
 ```bash
 python ./tools/convert_submit.py
 ```
+**Note:** The prediction file MUST be named as `pred.json`. The `.zip` file can be named as you like.
 
-We also provide the baseline submission file demo [here](https://drive.google.com/drive/folders/1rbpRKTsFhQc-Una53hixKgZjo0PM0bSL?usp=drive_link). Feel free to download for reference and learn how to submit the results.
+**:blue_car: Hint:** We provided the baseline submission file at [this](https://drive.google.com/drive/folders/1rbpRKTsFhQc-Una53hixKgZjo0PM0bSL?usp=drive_link) Google Drive link. Feel free to download and check it for reference and learn how to correctly submit the prediction files to the server.
+
+Finally, upload the compressed file to Track `1`'s [evaluation server](https://codalab.lisn.upsaclay.fr/competitions/17135) for model evaluation.
+
+
 
 ## Customized Dataset
 
-To customize your own dataset, just simply build your dataset based on `NuScenesCorruptionDataset`. We mainly modify the data loading part: we only consider the subset of scenes for each corruption type, below is an example. For more information, please refer to [corruption_dataset.py](BEVFormer/projects/mmdet3d_plugin/datasets/corruption_dataset.py).
+To customize your own dataset, simply build your dataset based on `NuScenesCorruptionDataset`. We mainly modify the data loading part: we only consider the subset of scenes for each corruption type, below is an example. For more information, please refer to [corruption_dataset.py](BEVFormer/projects/mmdet3d_plugin/datasets/corruption_dataset.py).
 
 ```python
 data = mmcv.load(ann_file)
@@ -107,9 +128,9 @@ data = mmcv.load(ann_file)
 # filter scenes
 data_infos = data['infos']
 sample_data_infos = []
+
 for data_info in data_infos:
     if self.corruption is not None:
-        # only consider the subset of scenes for each corruption type
         if data_info['scene_token'] in self.sample_scenes_dict[self.corruption]:
             sample_data_infos.append(data_info)
         else:
@@ -117,7 +138,7 @@ for data_info in data_infos:
 ```
 
 
-## Baseline Model
+## Baseline Results
 
 | Corruption        | NDS    | mAP    | mATE   | mASE   | mAOE   | mAVE   | mAAE   |
 | ----------------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -143,14 +164,13 @@ for data_info in data_infos:
 
 ## References
 
-Please note that you should cite the corresponding papers once you use the baseline model.
+Kindly cite the corresponding papers once you use the baseline model in this track.
 ```bibtex
 @inproceedings{li2022bevformer,
-  title={Bevformer: Learning bird’s-eye-view representation from multi-camera images via spatiotemporal transformers},
-  author={Li, Zhiqi and Wang, Wenhai and Li, Hongyang and Xie, Enze and Sima, Chonghao and Lu, Tong and Qiao, Yu and Dai, Jifeng},
-  booktitle={European conference on computer vision},
-  pages={1--18},
-  year={2022},
-  organization={Springer}
+    title = {BEVFormer: Learning Bird’s Eye View Representation from Multi-Camera Images via Spatiotemporal Transformers},
+    author = {Li, Zhiqi and Wang, Wenhai and Li, Hongyang and Xie, Enze and Sima, Chonghao and Lu, Tong and Qiao, Yu and Dai, Jifeng},
+    booktitle = {European Conference on Computer Vision},
+    pages = {1-18},
+    year = {2022},
 }
 ```
