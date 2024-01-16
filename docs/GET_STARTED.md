@@ -52,10 +52,10 @@ Participants of Track `2` can refer to the above resources for more details and 
 |:-:|:-|:-|
 | :taxi: | **Description** | Testing the accuracy of occupancy grid predictions in dynamic and unpredictable real-world driving environments |
 | :page_facing_up: | **Document & Instruction** | [`track-3/README.md`](https://github.com/robodrive-24/toolkit/blob/main/track-3/README.md)
-| :house: | **Evaluation Server** | To be updated |
+| :house: | **Evaluation Server** | https://codalab.lisn.upsaclay.fr/competitions/17063 |
 | :gear: | **Baseline** | [SurroundOcc](https://arxiv.org/abs/2303.09551) |
 | :octocat: | **Baseline Codebase** | https://github.com/weiyithu/SurroundOcc |
-| :bar_chart: | **Baseline Results** | To be updated |
+| :bar_chart: | **Baseline Results** | mIoU = 11.30% |
 
 Participants of Track `3` can refer to the above resources for more details and instructions.
 
