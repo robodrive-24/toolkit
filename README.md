@@ -58,8 +58,10 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 
 ## :memo: Changelog
 
+- `Jan 15 '24` - The evaluation server of Track `5` is online. [`[Server5]`](https://codalab.lisn.upsaclay.fr/competitions/17137)
 - `Jan 15 '24` - The evaluation server of Track `3` is online. [`[Server3]`](https://codalab.lisn.upsaclay.fr/competitions/17063)
 - `Jan 15 '24` - The evaluation server of Track `2` is online. [`[Server2]`](https://codalab.lisn.upsaclay.fr/competitions/17062)
+- `Jan 15 '24` - The evaluation server of Track `1` is online. [`[Server1]`](https://codalab.lisn.upsaclay.fr/competitions/17135)
 - `Jan 12 '24` - Instructions, baseline models, and results of Track `5` have been released.
 - `Jan 12 '24` - Training and evaluation data of Track `5` have been released.
 - `Jan 08 '24` - A list of Frequently Asked Questions ([FAQs](https://github.com/robodrive-24/toolkit/blob/main/docs/GET_STARTED.md#frequently-asked-questions)) has been summarized for better clarity.
@@ -93,11 +95,11 @@ There are **five** tracks in this `RoboDrive` challenge, with emphasis on the fo
 
 | \# | Task | Description | Doc | Server |
 |:-:|:-|:-|:-:|:-:|
-| Track `1` | Robust BEV Detection | Evaluating the resilience of detection algorithms against diverse environmental and sensor-based corruptions | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-1/README.md) | [Link] |
+| Track `1` | Robust BEV Detection | Evaluating the resilience of detection algorithms against diverse environmental and sensor-based corruptions | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-1/README.md) | [`[Link]`](https://codalab.lisn.upsaclay.fr/competitions/17135) |
 | Track `2` | Robust Map Segmentation | Focusing on the segmentation of complex driving scene elements in BEV maps under varied driving conditions | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-2/README.md) | [`[Link]`](https://codalab.lisn.upsaclay.fr/competitions/17062) |
 | Track `3` | Robust Occupancy Prediction | Testing the accuracy of occupancy grid predictions in dynamic and unpredictable real-world driving environments | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-3/README.md) | [`[Link]`](https://codalab.lisn.upsaclay.fr/competitions/17063) |
 | Track `4` | Robust Depth Estimation | Assessing the depth estimation robustness from multiple perspectives for comprehensive 3D scene perception | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-4/README.md) | [Link] |
-| Track `5` | Robust Multi-Modal BEV Detection | Tailored for evaluating the reliability of advanced driving perception systems equipped with multiple types of sensors | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-5/README.md) | [Link] |
+| Track `5` | Robust Multi-Modal BEV Detection | Tailored for evaluating the reliability of advanced driving perception systems equipped with multiple types of sensors | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-5/README.md) | [`[Link]`](https://codalab.lisn.upsaclay.fr/competitions/17137) |
 
 
 ## :1st_place_medal: Awards
