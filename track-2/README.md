@@ -1,26 +1,32 @@
 # Track 2 - Robust Map Segmentation
 
-## About
+- [Preparation](#preparation)
+  - [Installation](#gear-installation)
+  - [Datasets](#hotsprings-datasets)
+- [Getting Started](#getting-started)
+  - [Training](#rocket-training)
+  - [Evaluation](#bar_chart-evaluation)
+- [Customized Dataset](#customized-dataset)
+- [Baseline Results](#baseline-results)
+- [References](#references)
 
-We implement [BEVerse](https://arxiv.org/abs/2205.09743) as the baseline model for Track 2. The baseline model is trained on the nuScenes dataset and evaluated on the nuScenes dataset with different corruptions. This codebase provides instructions to test the baseline model on the RoboDrive Challenge.
 
-## Preparation
+# Preparation
 
-### Installation
+We implemented [BEVerse](https://arxiv.org/abs/2205.09743) as the baseline model for Track `2`. The baseline model was trained on the official `train` split of the nuScenes dataset and evaluated on our robustness probing sets under different corruptions.
 
-Kindly refer to the [installation.md](BEVerse/docs/installation.md) to set up environments and download the checkpoints.
+This codebase provides basic instructions for the reproduction of the baseline model in the RoboDrive Challenge.
 
-### Dataset
 
-We use nuScenes train split as the training data and use RoboDrive dataset as the evaluation data. For training data preparation, please refer to [prepare_dataset.md](BEVerse/docs/data_preparation.md). 
+## :gear: Installation
 
-For evaluation data preparation, please first download the dataset from [robodrive-release](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link), then run the following command to generate the evaluation `.pkl` file. You can also download the generated `robodrive_infos_test.pkl` file in [Google Drive](https://drive.google.com/drive/folders/1fd1SCkS2uB1l4PS8S5Le1i4q32X2u8PQ?usp=drive_link). The final folder structure like this:
+Kindly refer to [INSTALL.md](BEVerse/docs/installation.md) to set up environments and download necessary checkpoints.
 
-```bash
-bash tools/create_data.sh
-```
+## :hotsprings: Datasets
 
-Finally, please organize the folder structure like this:
+We use data under the nuScenes `train` split as the training set and the RoboDrive robustness probing data as the evaluation set. For training data preparation, kindly refer to [PREPARE_DATASET.md](BEVerse/docs/data_preparation.md). 
+
+For evaluation data preparation, kindly download the dataset from [this](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) Google Drive link and organize the folder structure as follows:
 
 ```bash
 .
@@ -35,25 +41,63 @@ Finally, please organize the folder structure like this:
 │       ├── nuscenes_infos_trainval.pkl
 │       ├── nuscenes_infos_val.pkl
 │       └── robodrive_infos_test.pkl
-...
+├── projects
+└── tools
 ```
 
-## Getting Started
+Next, run the following command to generate the `.pkl` file for the evaluation sets:
 
-### Train
+```bash
+bash tools/create_data.sh
+```
 
-We use nuScenes train split as the training dataset. Please refer to [getting_started.md](BEVerse/docs/getting_started.md) for more details on the usage of the baseline model.
+> **:blue_car: Hint:** You can also download our generated `rrobodrive_infos_test.pkl` file from [this](https://drive.google.com/drive/u/4/folders/1fd1SCkS2uB1l4PS8S5Le1i4q32X2u8PQ) Google Drive link.
 
-### Eval
 
-Simply run the following command to evaluate the baseline model on the corruption dataset.
+The `nuscenes` folder should end up looking like this:
+
+```bash
+.
+├── basemap
+├── can_bus
+├── can_bus.zip
+├── expansion
+├── lidarseg
+├── maps
+├── nuscenes_infos_temporal_train.pkl
+├── nuscenes_infos_temporal_val.pkl
+├── nuScenes-panoptic-v1.0-all
+├── prediction
+├── robodrive_infos_test.pkl
+├── robodrive-v1.0-test
+├── samples
+├── sweeps
+├── v1.0-mini
+├── v1.0-test
+└── v1.0-trainval
+```
+
+
+
+# Getting Started
+
+The training and evaluation instructions are summarized as follows.
+
+## :rocket: Training
+
+Kindly refer to [GET_STARTED.md](BEVerse/docs/getting_started.md) for the details regarding model training.
+
+
+## :bar_chart: Evaluation
+
+Simply run the following command to evaluate the trained baseline model on the RoboDrive robustness probing sets:
 
 ```bash
 cd BEVerse
 bash tools/dist_test_corruption.sh
 ```
 
-The generated results are in the following folder, Each `results.pkl` is a dictionary, the key is `sample_idx` and the value is `np.ndarray`.
+The generated results will be saved in the folder structure as follows. Each `results.pkl` is a dictionary, its key is `sample_idx` and its value is `np.ndarray`.
 
 ```bash
 .
@@ -68,34 +112,43 @@ The generated results are in the following folder, Each `results.pkl` is a dicti
 └── zoom_blur
 ```
 
-Finally, convert all the results into one `pred.pkl` file by runing the following script. Compress the file into a `.zip` file and upload to the [server](https://codalab.lisn.upsaclay.fr/competitions/17062) for evaluation. 
-> Note: the result file should be named as `pred.pkl` and the `.zip` file can be named as you like.
+Next, kindly merge all the `.json` files into a **single** `pred.json` file and zip compress it.
+
+You can merge the results using the following command:
 ```bash
 python ./tools/convert_submit.py
-``` 
+```
+> **:warning: Note:** The prediction file **MUST** be named as `pred.json`. The `.zip` file can be named as you like.
 
-We also provide the baseline submission file demo [here](https://drive.google.com/drive/folders/1fd1SCkS2uB1l4PS8S5Le1i4q32X2u8PQ?usp=drive_link). Feel free to download for reference and learn how to submit the results.
+Finally, upload the compressed file to Track `2`'s [evaluation server](https://codalab.lisn.upsaclay.fr/competitions/17062) for model evaluation.
 
-### Customized Dataset
+> **:blue_car: Hint:** We provided the baseline submission file at [this](https://drive.google.com/drive/folders/1fd1SCkS2uB1l4PS8S5Le1i4q32X2u8PQ?usp=drive_link) Google Drive link. Feel free to download and check it for reference and learn how to correctly submit the prediction files to the server.
 
-To customize your own dataset, just simply build your dataset based on [`NuScenesCorruptionDataset`](./BEVerse/projects/mmdet3d_plugin/datasets/corruption_dataset.py#18). We mainly modify the data loading part: we only consider the subset of scenes for each corruption type, below is an example. For more information, please refer to [robodrive_dataset.py](BEVerse/projects/mmdet3d_plugin/datasets/robodrive_dataset.py). Below is an example showing loading the subset of scenes for each corruption type:
+
+# Customized Dataset
+
+To customize your own dataset, simply build your dataset based on `NuScenesCorruptionDataset` from [this](./BEVerse/projects/mmdet3d_plugin/datasets/corruption_dataset.py#18) link.
+
+We mainly modified the data loading part. We only consider the subset of scenes for each corruption type, below is an example showing how to load a subset of scenes under each corruption type.
+
+For more information, kindly refer to [corruption_dataset.py](BEVerse/projects/mmdet3d_plugin/datasets/robodrive_dataset.py).
+
 
 ```python
 data = mmcv.load(ann_file)
         
-# filter scenes
 data_infos = data['infos']
 sample_data_infos = []
+
 for data_info in data_infos:
     if self.corruption is not None:
-        # only consider the subset of scenes for each corruption type
         if data_info['scene_token'] in self.sample_scenes_dict[self.corruption]:
             sample_data_infos.append(data_info)
         else:
             sample_data_infos.append(data_info)
 ```
 
-and change the data path [here](BEVerse/projects/mmdet3d_plugin/datasets/robodrive_dataset.py#L405):
+You can modify the data path as follows from [here](BEVerse/projects/mmdet3d_plugin/datasets/robodrive_dataset.py#L405):
 
 ```python
 if self.corruption is not None:
@@ -106,7 +159,7 @@ if self.corruption is not None:
 ```
 
 
-## Baseline Model
+# Baseline Results
 
 | Corruption        | mIoU  |
 | ----------------- | ----- |
@@ -129,14 +182,15 @@ if self.corruption is not None:
 | Pixelate          | 0.403 |
 | JPEG              | 0.319 |
 
-## References
 
-Please note that you should cite the corresponding papers once you use the baseline model.
+# References
+
+Kindly cite the corresponding paper(s) once you use the baseline model in this track.
 ```bibtex
 @article{zhang2022beverse,
-  title={Beverse: Unified perception and prediction in birds-eye-view for vision-centric autonomous driving},
-  author={Zhang, Yunpeng and Zhu, Zheng and Zheng, Wenzhao and Huang, Junjie and Huang, Guan and Zhou, Jie and Lu, Jiwen},
-  journal={arXiv preprint arXiv:2205.09743},
-  year={2022}
+    title = {BEVerse: Unified Perception and Prediction in Bird's Eye View for Vision-Centric Autonomous Driving},
+    author = {Zhang, Yunpeng and Zhu, Zheng and Zheng, Wenzhao and Huang, Junjie and Huang, Guan and Zhou, Jie and Lu, Jiwen},
+    journal = {arXiv preprint arXiv:2205.09743},
+    year = {2022}
 }
 ```
