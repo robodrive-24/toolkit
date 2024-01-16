@@ -76,7 +76,7 @@ Finally, convert all the results into one `pred.pkl` file by runing the followin
 python ./tools/convert_submit.py
 ``` 
 
-
+We also provide the baseline submission file demo [here](https://drive.google.com/drive/folders/1oIIK7ZaIB02-rkbBG84lt3n0bjtQ7Er4?usp=drive_link). Feel free to download for reference and learn how to submit the results.
 
 ### Customized Dataset
 
