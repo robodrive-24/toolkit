@@ -24,10 +24,10 @@ The first challenge topic contains **18 real-world corruption types**, ranging f
 |:-:|:-|:-|
 | :red_car: | **Description** | Evaluating the resilience of detection algorithms against diverse environmental and sensor-based corruptions |
 | :page_facing_up: | **Document & Instruction** | [`track-1/README.md`](https://github.com/robodrive-24/toolkit/blob/main/track-1/README.md)
-| :house: | **Evaluation Server** | To be updated |
+| :house: | **Evaluation Server** | https://codalab.lisn.upsaclay.fr/competitions/17135 |
 | :gear: | **Baseline Model** | [BEVFormer](https://arxiv.org/abs/2203.17270) |
 | :octocat: | **Baseline Codebase** | https://github.com/fundamentalvision/BEVFormer |
-| :bar_chart: | **Baseline Results** | To be updated |
+| :bar_chart: | **Baseline Results** | NDS = 31.24%, mAP = 18.82% |
 
 Participants of Track `1` can refer to the above resources for more details and instructions.
 
@@ -87,10 +87,10 @@ The second challenge topic aims to probe the 3D scene perception robustness unde
 |:-:|:-|:-|
 | :truck: | **Description** | Tailored for evaluating the reliability of advanced driving perception systems equipped with multiple types of sensors |
 | :page_facing_up: | **Document & Instruction** | [`track-5/README.md`](https://github.com/robodrive-24/toolkit/blob/main/track-5/README.md)
-| :house: | **Evaluation Server** | To be updated |
-| :gear: | **Baseline** | To be updated |
-| :octocat: | **Baseline Codebase** | To be updated |
-| :bar_chart: | **Baseline Results** | To be updated |
+| :house: | **Evaluation Server** | https://codalab.lisn.upsaclay.fr/competitions/17137 |
+| :gear: | **Baseline** | [BEVFusion](https://arxiv.org/abs/2205.13542) |
+| :octocat: | **Baseline Codebase** | https://github.com/mit-han-lab/bevfusion |
+| :bar_chart: | **Baseline Results** | NDS = 42.86%, mAP = 24.50% |
 
 Participants of Track `5` can refer to the above resources for more details and instructions.
 
