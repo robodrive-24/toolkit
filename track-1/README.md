@@ -13,7 +13,7 @@
 
 # Preparation
 
-We implemented [BEVFormer](https://arxiv.org/abs/2203.17270) as the baseline model for Track `1`. The baseline model is trained on the official `train` split of the nuScenes dataset and evaluated on our robustness probing sets under different corruptions.
+We implemented [BEVFormer](https://arxiv.org/abs/2203.17270) as the baseline model for Track `1`. The baseline model was trained on the official `train` split of the nuScenes dataset and evaluated on our robustness probing sets under different corruptions.
 
 This codebase provides basic instructions for the reproduction of the baseline model in the RoboDrive Challenge.
 
@@ -24,9 +24,9 @@ Kindly refer to [GET_STARTED.md](./BEVFormer/docs/getting_started.md) to set up 
 
 ## :hotsprings: Datasets
 
-We use data under the nuScenes `train` split as the training set and the RoboDrive robustness probing data as the evaluation set. For training data preparation, kindly refer to [PREPARE_DATASET.md](./BEVFormer/docs/prepare_dataset.md). 
+We use data under the nuScenes `train` split as the training set and the RoboDrive robustness probing data as the evaluation sets. For training data preparation, kindly refer to [PREPARE_DATASET.md](./BEVFormer/docs/prepare_dataset.md). 
 
-For evaluation data preparation, kindly download the dataset from [this](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) Google Drive link and organize the folder structure like as follows:
+For evaluation data preparation, kindly download the dataset from [this](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) Google Drive link and organize the folder structure as follows:
 
 ```bash
 .
@@ -69,7 +69,7 @@ The `nuscenes` folder should end up looking like this:
 ├── sweeps
 ├── v1.0-mini
 ├── v1.0-test
-├── v1.0-trainval
+└── v1.0-trainval
 ```
 
 
@@ -79,7 +79,7 @@ The training and evaluation instructions are summarized as follows.
 
 ## :rocket: Training
 
-Kindly refer to [GETTING_STARTED.md](./BEVFormer/docs/getting_started.md) for the details regarding model training.
+Kindly refer to [GET_STARTED.md](./BEVFormer/docs/getting_started.md) for the details regarding model training.
 
 ## :bar_chart: Evaluation
 
