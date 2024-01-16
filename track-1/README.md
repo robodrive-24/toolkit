@@ -89,7 +89,7 @@ The generated results will be saved in the folder like this:
 
 Finally, please merge all the `json` file into one `pred.json` file and compress it into `.zip` file. Then, upload to the server [server](https://codalab.lisn.upsaclay.fr/competitions/17135) for evaluation. You can merge the results using the following command:
 
-> Note: the result file should be named as `pred.pkl` and the `.zip` file can be named as you like.
+> Note: the result file should be named as `pred.json` and the `.zip` file can be named as you like.
 
 ```bash
 python ./tools/convert_submit.py
