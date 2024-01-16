@@ -70,7 +70,7 @@ cd BEVFusion
 bash tools/test_corruption.sh
 ```
 
-Please upload the generated `results_nusc.json` to the [server]() for evaluation.
+Please rename the generated `results_nusc.json` to `pred.json` file and compress it into `.zip` file. Then upload to the [server](https://codalab.lisn.upsaclay.fr/competitions/17137) for evaluation.
 
 
 ## Customized Dataset
@@ -83,3 +83,18 @@ To customize your own dataset, just simply build your dataset based on [`RoboDri
 | Model             | NDS    | mAP    | mATE   | mASE   | mAOE   | mAVE   | mAAE   |
 | ----------------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | BEVFusion         | 0.4285 | 0.2448 | 0.4012 | 0.2910 | 0.4928 | 0.5289 | 0.2251 |
+
+
+## References
+
+Please note that you should cite the corresponding papers once you use the baseline model.
+```bibtex
+@inproceedings{liu2023bevfusion,
+  title={Bevfusion: Multi-task multi-sensor fusion with unified bird's-eye view representation},
+  author={Liu, Zhijian and Tang, Haotian and Amini, Alexander and Yang, Xinyu and Mao, Huizi and Rus, Daniela L and Han, Song},
+  booktitle={2023 IEEE international conference on robotics and automation (ICRA)},
+  pages={2774--2781},
+  year={2023},
+  organization={IEEE}
+}
+```
