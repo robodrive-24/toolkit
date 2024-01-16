@@ -72,6 +72,28 @@ cd BEVFormer
 bash tools/dist_test_corruption.sh ./projects/configs/robodrive/bevformer_base.py ./ckpt/bevformer_r101_dcn_24ep.pth 1
 ```
 
+The generated results will be saved in the folder like this:
+
+```bash
+.
+├── brightness
+│   └── results_nusc.json
+├── color_quant
+│   └── results_nusc.json
+├── contrast
+│   └── results_nusc.json
+...
+├── snow
+└── zoom_blur
+```
+
+Finally, please merge all the `json` file into one `pred.json` file and compress it into `.zip` file. Then, upload to the server [server](https://codalab.lisn.upsaclay.fr/competitions/17135) for evaluation. You can merge the results using the following command:
+
+```bash
+python ./tools/convert_submit.py
+```
+
+
 ## Customized Dataset
 
 To customize your own dataset, just simply build your dataset based on `NuScenesCorruptionDataset`. We mainly modify the data loading part: we only consider the subset of scenes for each corruption type, below is an example. For more information, please refer to [corruption_dataset.py](BEVFormer/projects/mmdet3d_plugin/datasets/corruption_dataset.py).
@@ -91,22 +113,6 @@ for data_info in data_infos:
             sample_data_infos.append(data_info)
 ```
 
-## Evaluation
-
-Please upload the generated `results_nusc.json` to the [server]() for evaluation. The upload folder structure should be like this:
-
-```bash
-.
-├── brightness
-│   └── results_nusc.json
-├── color_quant
-│   └── results_nusc.json
-├── contrast
-│   └── results_nusc.json
-...
-├── snow
-└── zoom_blur
-```
 
 ## Baseline Model
 
