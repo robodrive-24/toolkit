@@ -72,6 +72,7 @@ bash tools/test_corruption.sh
 
 Please rename the generated `results_nusc.json` to `pred.json` file and compress it into `.zip` file. Then upload to the [server](https://codalab.lisn.upsaclay.fr/competitions/17137) for evaluation.
 
+> Note: the result file should be named as `pred.json` and the `.zip` file can be named as you like.
 
 ## Customized Dataset
 
