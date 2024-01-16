@@ -169,7 +169,7 @@ def robodrive_multi_gpu_test(model, data_loader, corruption, tmpdir=None, gpu_co
         occ_preds_collect = dict()
         
         for sublist in occ_preds_list:
-            occ_preds_collect[sublist[0]] = sublist[1].cpu().numpy()
+            occ_preds_collect[sublist[0]] = sublist[1].cpu().numpy().astype(np.uint8)
         
         assert len(dataset) == len(occ_preds_collect), f'{len(dataset)} != {len(occ_preds_collect)}'
         
