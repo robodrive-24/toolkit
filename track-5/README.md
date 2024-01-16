@@ -74,6 +74,8 @@ Please rename the generated `results_nusc.json` to `pred.json` file and compress
 
 > Note: the result file should be named as `pred.json` and the `.zip` file can be named as you like.
 
+We also provide the baseline submission file demo [here](https://drive.google.com/drive/folders/1IAGH-io2wR3YjhNTMPc5Vp7kIRwa5Vdw?usp=drive_link). Feel free to download for reference and learn how to submit the results.
+
 ## Customized Dataset
 
 To customize your own dataset, just simply build your dataset based on [`RoboDriveDataset`](BEVFusion/mmdet3d/datasets/robodrive_dataset.py#L19). We simply modify the data path to load image and lidar data.
