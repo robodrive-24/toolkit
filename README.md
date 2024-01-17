@@ -45,9 +45,9 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 - [Useful Info](#information_source-useful-info)
 - [Timeline](#clock1-timeline)
 - [Challenge Tracks](#blue_car-challenge-tracks)
-- [Awards](#1st_place_medal-awards)
 - [Data Preparation](#hotsprings-data-preparation)
 - [Getting Started](#rocket-getting-started)
+- [Awards](#1st_place_medal-awards)
 - [License](#license)
 - [Sponsor](#heart-sponsor)
 - [Citation](#citation)
@@ -107,17 +107,25 @@ Our evaluation servers were developed based on the [CodaLab](https://codalab.lis
 > CodaLab is an open-source web-based platform that enables researchers, developers, and data scientists to collaborate, with the goal of advancing research fields where machine learning and advanced computation are used.
 
 
-
-## :1st_place_medal: Awards
-To be announced.
-
-
 ## :hotsprings: Data Preparation
 Kindly refer to [DATA_PREPARE.md](docs/DATA_PREPARE.md) for the details to prepare the training and evaluation data.
 
 
 ## :rocket: Getting Started
 Kindly refer to [GET_STARTED.md](docs/GET_STARTED.md) to learn more usage of this toolkit.
+
+
+## :1st_place_medal: Awards
+The top-performing participants of this competition are honored with **cash awards** and **certificates**.
+
+| Award | Amount |
+| :- | :- | 
+| :1st_place_medal: 1st Place | to be updated |
+| :2nd_place_medal: 2nd Place | to be updated |
+| :3rd_place_medal: 3rd Place | to be updated |
+
+> **Note:** The cash awards are donated by our sponsors. We reserve the right to examine the validity of each submission. For more information, kindly refer to the [Terms & Conditions](#balance_scale-terms--conditions) section.
+
 
 
 ## License
