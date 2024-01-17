@@ -1,14 +1,14 @@
 # Getting Started
 
-- [Challenge One: Corruptions]()
+- [Challenge One: Corruptions](#challenge-one-corruptions)
   - [Track 1: Robust BEV Detection](#red_car-track-1-robust-bev-detection)
   - [Track 2: Robust Map Segmentation](#blue_car-track-2-robust-map-segmentation)
   - [Track 3: Robust Occupancy Prediction](#taxi-track-3-robust-occupancy-prediction)
   - [Track 4: Robust Depth Estimation](#minibus-track-4-robust-depth-estimation)
-- [Challenge Two: Sensor Failures]()
+- [Challenge Two: Sensor Failures](#challenge-two-sensor-failures)
   - [Track 5: Robust Multi-Modal BEV Detection](#truck-track-5-robust-multi-modal-bev-detection)
 - [Rules & Conditions](#rules--conditions)
-- [Frequently Asked Questions]()
+- [Frequently Asked Questions](#frequently-asked-questions)
 
 
 # Challenge One: Corruptions
