@@ -13,7 +13,7 @@
 
 # Preparation
 
-We implemented [BEVFusion](https://ieeexplore.ieee.org/abstract/document/10160968) as the baseline model for Track `5`. The baseline model was trained on the official `train` split of the nuScenes dataset and evaluated on our robustness probing sets under different corruptions.
+We implemented [BEVFusion](https://ieeexplore.ieee.org/abstract/document/10160968) as the baseline model for Track `5`. The baseline model was trained on the official `train` split of the nuScenes dataset and evaluated on our robustness probing sets under sensor failure scenarios.
 
 This codebase provides basic instructions for the reproduction of the baseline model in the RoboDrive Challenge.
 
