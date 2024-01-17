@@ -169,6 +169,14 @@ If you find this competition helpful for your research, please kindly consider c
     year = {2023},
 }
 ```
+```bibtex
+@misc{mmdet3d,
+    title = {MMDetection3D: OpenMMLab Next-Generation Platform for General 3D Object Detection},
+    author = {MMDetection3D Contributors},
+    howpublished = {\url{https://github.com/open-mmlab/mmdetection3d}},
+    year = {2020}
+}
+```
 
 
 ## :balance_scale: Terms & Conditions
