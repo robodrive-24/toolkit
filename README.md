@@ -48,9 +48,9 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 - [Awards](#1st_place_medal-awards)
 - [Data Preparation](#hotsprings-data-preparation)
 - [Getting Started](#rocket-getting-started)
-- [Citation](#citation)
 - [License](#license)
 - [Sponsor](#heart-sponsor)
+- [Citation](#citation)
 - [Terms & Conditions](#balance_scale-terms--conditions)
 - [Frequently Asked Questions](#thinking-frequently-asked-questions)
 - [Acknowledgements](#ok_man-acknowledgements)
@@ -101,6 +101,12 @@ There are **five** tracks in this `RoboDrive` challenge, with emphasis on the fo
 | Track `4` | Robust Depth Estimation | Assessing the depth estimation robustness from multiple perspectives for comprehensive 3D scene perception | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-4/README.md) | [Link] |
 | Track `5` | Robust Multi-Modal BEV Detection | Tailored for evaluating the reliability of advanced driving perception systems equipped with multiple types of sensors | [`[Link]`](https://github.com/robodrive-24/toolkit/blob/main/track-5/README.md) | [`[Link]`](https://codalab.lisn.upsaclay.fr/competitions/17137) |
 
+Our evaluation servers were developed based on the [CodaLab](https://codalab.lisn.upsaclay.fr/) platform. :ok_man:
+
+><img src="docs/figs/codalab-logo.png" width="30%"/><br/>
+> CodaLab is an open-source web-based platform that enables researchers, developers, and data scientists to collaborate, with the goal of advancing research fields where machine learning and advanced computation are used.
+
+
 
 ## :1st_place_medal: Awards
 To be announced.
@@ -112,6 +118,16 @@ Kindly refer to [DATA_PREPARE.md](docs/DATA_PREPARE.md) for the details to prepa
 
 ## :rocket: Getting Started
 Kindly refer to [GET_STARTED.md](docs/GET_STARTED.md) to learn more usage of this toolkit.
+
+
+## License
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+<br />
+This competition is under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+
+## :heart: Sponsor
+To be updated.
 
 
 ## Citation
@@ -144,16 +160,6 @@ If you find this competition helpful for your research, please kindly consider c
     year = {2023},
 }
 ```
-
-
-## License
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-<br />
-This competition is under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
-
-## :heart: Sponsor
-To be updated.
 
 
 ## :balance_scale: Terms & Conditions
