@@ -256,7 +256,10 @@ To ensure a fair comparison among all participants, we require:
 
 
 ## Organizers
-To be updated.
+
+<p align="center">
+  <img src="docs/figs/organizer.png" align="center" width="100%">
+</p>
 
 
 ## :ok_man: Acknowledgements
