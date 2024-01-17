@@ -33,10 +33,7 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 > This competition is affiliated with the 41st IEEE Conference on Robotics and Automation ([ICRA 2024](https://2024.ieee-icra.org/)).
 
 ><img src="https://robodrive-24.github.io/icra2024.png" width="19%"/><br/>
-
 > ICRA is the IEEE Robotics and Automation Society's flagship conference. ICRA 2024 will be held from May 13th to 17th, 2024, in Yokohama, Japan.
-
-> The ICRA competitions provide a unique venue for state-of-the-art technical demonstrations from research labs throughout academia and industry. For additional details, kindly refer to the ICRA 2024 [website](https://2024.ieee-icra.org/).
 
 
 
