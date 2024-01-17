@@ -25,25 +25,30 @@
         │   ├── nuscenes_infos_train.pkl
         │   └── nuscenes_infos_val.pkl
         │
-        └── robodrive-release
-            ├── brightness
-            ├── color_quant
-            ├── contrast
-            ├── ...
-            ├── zoom_blur
-            ├── ...
+        │── robodrive-release
+        │   ├── brightness
+        │   ├── color_quant
+        │   ├── contrast
+        │   ├── ...
+        │   ├── zoom_blur
+        │   ├── ...
+        │   ├── robodrive-v1.0-test
+        │   └── sample_scenes.pkl
+        │
+        └── robodrive-sensor
+            ├── samples
             ├── robodrive-v1.0-test
-            └── sample_scenes.pkl
+            └── sweeps
 ```
 
 
 
-## :red_car: Training Data
+# :red_car: Training Data
 In this competition, all participants are expected to adopt the **official** [nuScenes](https://www.nuscenes.org/nuscenes) dataset from [Motional](https://motional.com/) for model training.
 
 :warning: **Note:** Additional data sources are NOT allowed in this competition.
 
-### Download
+## Download
 
 To install the [nuScenes](https://www.nuscenes.org/nuscenes) dataset, download the data, annotations, and other files from https://www.nuscenes.org/download. 
 
@@ -76,8 +81,8 @@ Unpack the compressed file(s) into `/data/sets/nuscenes` and your folder structu
     │   ├── CAM_BACK_LEFT
     │   ├── CAM_BACK_RIGHT
     │   ├── CAM_FRONT
-    │   ├── CAM_FRONT
-    │   ├── CAM_FRONT
+    │   ├── CAM_FRONT_LEFT
+    │   ├── CAM_FRONT_RIGHT
     │   ├── ...
     │   ├── LIDAR_TOP
     │   └── ...
@@ -100,7 +105,7 @@ Unpack the compressed file(s) into `/data/sets/nuscenes` and your folder structu
     └── nuscenes_infos_val.pkl
 ```
 
-### Prepare for Training
+## Prepare for Training
 
 Prepare the `.pkl` files for [nuScenes](https://www.nuscenes.org/nuscenes) training by running the following script:
 
@@ -113,13 +118,20 @@ python tools/create_data.py nuscenes --root-path ./data/sets/nuscenes --out-dir 
 Alternatively, we have provided offline generated `.pkl` files at [this](https://mmdetection3d.readthedocs.io/en/latest/user_guides/dataset_prepare.html#summary-of-annotation-files) link. You can download these files and place them under `data/sets/nuscenes/`. 
 
 
-## :blue_car: Evaluation Data
+# :blue_car: Evaluation Data
 
 In this competition, all participants are expected to adopt our **robustness probing sets** for model evaluation.
 
-### Download
-- For Tracks `1` to `4`: Please download the camera-corruption sets from [this](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) Google Drive link.
-- [To be updated] For Track `5`: Please download the sensor-corruption sets from [this]() Google Drive link.
+## Download
+
+### :hotsprings: Tracks `1` to `4`:
+
+Kindly download the RoboDrive camera-corruption sets from either one of the following sources.
+
+| Type | Source 1 | Source 2 |
+| :-: | :-: | :-: |
+| Google Drive | [`link1`](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) | [`link2`](https://drive.google.com/file/d/1V2YTaBgqEEKKFiD7uQ2z3cf7GMHuUYk1/view?usp=sharing) |
+| Baidu Cloud | TBD | / |
 
 Unpack the compressed file(s) into `/data/sets/robodrive-release` and your folder structure should end up looking like this:
 
@@ -132,8 +144,8 @@ Unpack the compressed file(s) into `/data/sets/robodrive-release` and your folde
     │       ├── CAM_BACK_LEFT
     │       ├── CAM_BACK_RIGHT
     │       ├── CAM_FRONT
-    │       ├── CAM_FRONT
-    │       └── CAM_FRONT
+    │       ├── CAM_FRONT_LEFT
+    │       └── CAM_FRONT_RIGHT
     │
     ├── color_quant
     ├── contrast
@@ -162,16 +174,49 @@ Unpack the compressed file(s) into `/data/sets/robodrive-release` and your folde
     └── sample_scenes.pkl
 ```
 
-There are **18 corruption types** in total, therefore, you should find the same number of folders that contain the camera-corruption data.
+> **Hints:** There are **18 corruption types** in total, therefore, you should find the same number of folders that contain the camera-corruption data.
 
 
-### Prepare for Evaluation
+### :hotsprings: Track `5`
+
+Kindly download the RoboDrive sensor-corruption sets from either one of the following sources.
+
+| Type | Source 1 | Source 2 |
+| :-: | :-: | :-: |
+| Google Drive | [`link1`](https://drive.google.com/file/d/1Hw59VToELsB_bJ9qTGuyn9zdDzaZSnT4/view?usp=sharing) | [`link2`](https://drive.google.com/file/d/1wksmgzokYB-c9xGw8Ex6qN8R5mld-C_Q/view?usp=sharing) |
+| Baidu Cloud | TBD | / |
+
+Unpack the compressed file(s) into `/data/sets/robodrive-sensor` and your folder structure should end up looking like this:
+
+```shell
+└── robodrive-sensor
+    │
+    ├── samples  <- contains the .jpg files from surrounding cameras 
+    │   ├── CAM_BACK
+    │   ├── CAM_BACK_LEFT
+    │   ├── CAM_BACK_RIGHT
+    │   ├── CAM_FRONT
+    │   ├── CAM_FRONT_LEFT
+    │   ├── CAM_FRONT_RIGHT
+    │   └── LIDAR_TOP
+    │
+    ├── robodrive-v1.0-test
+    │   ├── Usual files (e.g. attribute.json, calibrated_sensor.json etc.)
+    │   ├── lidarseg.json  <- contains the mapping of each .bin file to the token   
+    │   └── category.json  <- contains the categories of the labels (note that the 
+    │                         category.json from nuScenes v1.0 is overwritten)
+    └── sweeps
+```
+
+
+
+## Prepare for Evaluation
 
 We have prepared the `sample_scenes.pkl` file for model evaluation. Kindly refer to your `/data/sets/robodrive-release` folder.
 
 
-## References
-Please note that you should cite the corresponding papers once you use these datasets.
+# References
+Kindly cite the corresponding papers once you use these datasets.
 
 ```bibtex
 @inproceedings{caesar2020nuscenes,
