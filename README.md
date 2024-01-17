@@ -26,7 +26,7 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 >  - Loss of one or more camera views during the driving system sensing process.
 >  - Loss of the roof-top LiDAR view during the driving system sensing process.
 
-> Kindly visit the `RoboDrive` [webpage](https://robodrive-24.github.io/) to explore more details and instructions of this challenge. :blue_car:
+> Kindly visit our [webpage](https://robodrive-24.github.io/) to explore more details and instructions of this challenge. :blue_car:
 
 ## :rainbow: Venue
 
