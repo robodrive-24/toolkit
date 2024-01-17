@@ -162,11 +162,15 @@ To ensure a fair comparison among all participants, we require:
 |  |
 |  |
 | :thinking: | **Q13:** ***"Can I combine the training and validation sets for model training?"*** |
-| :blue_car: | **A13:**  [Updated]. It is strictly **NOT** allowed to use the validation data for model training. All participants **MUST** follow the nuScenes official `train` split during model training and **REFRAIN** from involving any samples from the validation set. Any violations of this rule will be regarded as **cheating** and the results will be canceled.
+| :blue_car: | **A13:**  It is strictly **NOT** allowed to use the validation data for model training. All participants **MUST** follow the nuScenes official `train` split during model training and **REFRAIN** from involving any samples from the validation set. Any violations of this rule will be regarded as **cheating** and the results will be canceled.
 |  |
 |  |
 | :thinking: | **Q14:** ***"Can I use model ensembling and test-time augmentation (TTA)?"*** |
 | :blue_car: | **A14:**  Like many other academic competitions, it is possible to use **model ensembling** and **test-time augmentation (TTA)** to enhance the model when preparing the submissions. The participants **SHOULD** include necessary details for the use of model ensembling and TTA in their code and reports.
+|  |
+|  |
+| :thinking: | **Q15:** ***"How many times can I make submissions to the server?"*** |
+| :blue_car: | **A15:**  For phase one (Jan. - Mar.), a team can submit up to **3** times per day and **99** times total. For phase two (Apr.), a team can submit up to **2** times per day and **49** times total. One team is affiliated with one CodaLab account only. Please **REFRAIN** from having multiple accounts for the same team.
 |  |
 |  |
 | :thinking: | ... |
