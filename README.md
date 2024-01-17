@@ -41,34 +41,20 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 
 
 # Outline
-- [Changelog](#memo-changelog)
 - [Useful Info](#information_source-useful-info)
 - [Timeline](#clock1-timeline)
 - [Challenge Tracks](#blue_car-challenge-tracks)
 - [Data Preparation](#hotsprings-data-preparation)
 - [Getting Started](#rocket-getting-started)
+- [Changelog](#memo-changelog)
 - [Awards](#1st_place_medal-awards)
 - [License](#license)
 - [Sponsor](#heart-sponsor)
 - [Citation](#citation)
 - [Terms & Conditions](#balance_scale-terms--conditions)
 - [Frequently Asked Questions](#thinking-frequently-asked-questions)
+- [Organizers](#organizers)
 - [Acknowledgements](#ok_man-acknowledgements)
-
-
-## :memo: Changelog
-
-- `Jan 15 '24` - The evaluation server of Track `5` is online. [`[Server5]`](https://codalab.lisn.upsaclay.fr/competitions/17137)
-- `Jan 15 '24` - The evaluation server of Track `3` is online. [`[Server3]`](https://codalab.lisn.upsaclay.fr/competitions/17063)
-- `Jan 15 '24` - The evaluation server of Track `2` is online. [`[Server2]`](https://codalab.lisn.upsaclay.fr/competitions/17062)
-- `Jan 15 '24` - The evaluation server of Track `1` is online. [`[Server1]`](https://codalab.lisn.upsaclay.fr/competitions/17135)
-- `Jan 12 '24` - Instructions, baseline models, and results of Track `5` have been released.
-- `Jan 12 '24` - Training and evaluation data of Track `5` have been released.
-- `Jan 08 '24` - A list of Frequently Asked Questions ([FAQs](https://github.com/robodrive-24/toolkit/blob/main/docs/GET_STARTED.md#frequently-asked-questions)) has been summarized for better clarity.
-- `Jan 06 '24` - Instructions, baseline models, and results of Tracks `1` to `3` have been released.
-- `Jan 05 '24` - Training and evaluation data of Tracks `1` to `4` have been released.
-- `Dec 25 '23` - Register for your team by filling in [this](https://forms.gle/hnaezVhEycPAjUD78) Google Form.
-- `Dec 01 '23` - Launch of [The RoboDrive Challenge](https://robodrive-24.github.io/) at [ICRA 2024](https://2024.ieee-icra.org/). More info coming soon!
 
 
 ## :information_source: Useful Info
@@ -113,6 +99,21 @@ Kindly refer to [DATA_PREPARE.md](docs/DATA_PREPARE.md) for the details to prepa
 
 ## :rocket: Getting Started
 Kindly refer to [GET_STARTED.md](docs/GET_STARTED.md) to learn more usage of this toolkit.
+
+
+## :memo: Changelog
+
+- `Jan 15 '24` - The evaluation server of Track `5` is online. [`[Server5]`](https://codalab.lisn.upsaclay.fr/competitions/17137)
+- `Jan 15 '24` - The evaluation server of Track `3` is online. [`[Server3]`](https://codalab.lisn.upsaclay.fr/competitions/17063)
+- `Jan 15 '24` - The evaluation server of Track `2` is online. [`[Server2]`](https://codalab.lisn.upsaclay.fr/competitions/17062)
+- `Jan 15 '24` - The evaluation server of Track `1` is online. [`[Server1]`](https://codalab.lisn.upsaclay.fr/competitions/17135)
+- `Jan 12 '24` - Instructions, baseline models, and results of Track `5` have been released.
+- `Jan 12 '24` - Training and evaluation data of Track `5` have been released.
+- `Jan 08 '24` - A list of Frequently Asked Questions ([FAQs](https://github.com/robodrive-24/toolkit/blob/main/docs/GET_STARTED.md#frequently-asked-questions)) has been summarized for better clarity.
+- `Jan 06 '24` - Instructions, baseline models, and results of Tracks `1` to `3` have been released.
+- `Jan 05 '24` - Training and evaluation data of Tracks `1` to `4` have been released.
+- `Dec 25 '23` - Register for your team by filling in [this](https://forms.gle/hnaezVhEycPAjUD78) Google Form.
+- `Dec 01 '23` - Launch of [The RoboDrive Challenge](https://robodrive-24.github.io/) at [ICRA 2024](https://2024.ieee-icra.org/). More info coming soon!
 
 
 ## :1st_place_medal: Awards
@@ -248,6 +249,9 @@ To ensure a fair comparison among all participants, we require:
 ### Contact
 :mailbox: Didn't find a related FAQ to your questions? Let us know (robodrive.2024@gmail.com)!
 
+
+## Organizers
+To be updated.
 
 
 ## :ok_man: Acknowledgements
