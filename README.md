@@ -117,11 +117,11 @@ Kindly refer to [GET_STARTED.md](docs/GET_STARTED.md) to learn more usage of thi
 ## :1st_place_medal: Awards
 The top-performing participants of this competition are honored with **cash awards** and **certificates**.
 
-| Award | Amount |
-| :- | :- | 
-| :1st_place_medal: 1st Place | to be updated |
-| :2nd_place_medal: 2nd Place | to be updated |
-| :3rd_place_medal: 3rd Place | to be updated |
+| Award | Amount | Honor | 
+| :- | :- | :- | 
+| :1st_place_medal: 1st Place | to be updated | Official Certificate |
+| :2nd_place_medal: 2nd Place | to be updated | Official Certificate |
+| :3rd_place_medal: 3rd Place | to be updated | Official Certificate |
 
 > **Note:** The cash awards are donated by our sponsors. We reserve the right to examine the validity of each submission. For more information, kindly refer to the [Terms & Conditions](#balance_scale-terms--conditions) section.
 
@@ -163,7 +163,7 @@ If you find this competition helpful for your research, please kindly consider c
     title = {Robo3D: Towards Robust and Reliable 3D Perception against Corruptions},
     author = {Lingdong Kong and Youquan Liu and Xin Li and Runnan Chen and Wenwei Zhang and Jiawei Ren and Liang Pan and Kai Chen and Ziwei Liu},
     booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    pages = {19994--20006},
+    pages = {19994-20006},
     year = {2023},
 }
 ```
@@ -238,7 +238,7 @@ To ensure a fair comparison among all participants, we require:
 |  |
 |  |
 | :thinking: | **Q12:** ***"Are there any restrictions on the use of pre-trained weights (such as DD3D, ImageNet, COCO, ADE20K, Object365, and so on)?"*** |
-| :blue_car: | **A12:**  To be updated.
+| :blue_car: | **A12:**  Following the most recent BEV perception works, it is possible to use pre-trained weights on **DD3D**, **ImageNet**, and **COCO**. The use of weights pre-trained on other datasets is **NOT** allowed in this competition.
 |  |
 |  |
 | :thinking: | **Q13:** ***"Can I combine the training and validation sets for model training?"*** |
