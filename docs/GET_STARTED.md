@@ -158,7 +158,7 @@ To ensure a fair comparison among all participants, we require:
 |  |
 |  |
 | :thinking: | **Q12:** ***"Are there any restrictions on the use of pre-trained weights (such as DD3D, ImageNet, COCO, ADE20K, Object365, and so on)?"*** |
-| :blue_car: | **A12:**  To be updated.
+| :blue_car: | **A12:**  Following the most recent BEV perception works, it is possible to use pre-trained weights on **DD3D**, **ImageNet**, and **COCO**. The use of weights pre-trained on other datasets is **NOT** allowed in this competition.
 |  |
 |  |
 | :thinking: | **Q13:** ***"Can I combine the training and validation sets for model training?"*** |
