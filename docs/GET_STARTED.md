@@ -13,7 +13,7 @@
 
 # Challenge One: Corruptions
 
-The first challenge topic contains **18 real-world corruption types**, ranging from the following **three** perspectives:
+The first challenge topic contains 18 real-world corruption types, ranging from the following three perspectives:
   - Weather and lighting conditions, such as bright, low-light, foggy, and snowy conditions.
   - Movement and acquisition failures, such as potential blurs caused by vehicle motions.
   - Data processing issues, such as noises and quantizations happen due to hardware malfunctions.
@@ -29,7 +29,7 @@ The first challenge topic contains **18 real-world corruption types**, ranging f
 | :octocat: | **Baseline Codebase** | https://github.com/fundamentalvision/BEVFormer |
 | :bar_chart: | **Baseline Results** | NDS = 31.24%, mAP = 18.82% |
 
-Participants of Track `1` can refer to the above resources for more details and instructions.
+> **Hint:** Participants of Track `1` can refer to the above resources for more details and instructions.
 
 
 ## :blue_car: Track 2: Robust Map Segmentation
@@ -43,7 +43,7 @@ Participants of Track `1` can refer to the above resources for more details and 
 | :octocat: | **Baseline Codebase** | https://github.com/zhangyp15/BEVerse |
 | :bar_chart: | **Baseline Results** | mIoU = 17.33% |
 
-Participants of Track `2` can refer to the above resources for more details and instructions.
+> **Hint:** Participants of Track `2` can refer to the above resources for more details and instructions.
 
 
 ## :taxi: Track 3: Robust Occupancy Prediction
@@ -57,7 +57,7 @@ Participants of Track `2` can refer to the above resources for more details and 
 | :octocat: | **Baseline Codebase** | https://github.com/weiyithu/SurroundOcc |
 | :bar_chart: | **Baseline Results** | mIoU = 11.30% |
 
-Participants of Track `3` can refer to the above resources for more details and instructions.
+> **Hint:** Participants of Track `3` can refer to the above resources for more details and instructions.
 
 
 ## :minibus: Track 4: Robust Depth Estimation
@@ -71,7 +71,7 @@ Participants of Track `3` can refer to the above resources for more details and 
 | :octocat: | **Baseline Codebase** | https://github.com/weiyithu/SurroundDepth |
 | :bar_chart: | **Baseline Results** | To be updated |
 
-Participants of Track `4` can refer to the above resources for more details and instructions.
+> **Hint:** Participants of Track `4` can refer to the above resources for more details and instructions.
 
 
 # Challenge Two: Sensor Failures
@@ -92,7 +92,7 @@ The second challenge topic aims to probe the 3D scene perception robustness unde
 | :octocat: | **Baseline Codebase** | https://github.com/mit-han-lab/bevfusion |
 | :bar_chart: | **Baseline Results** | NDS = 42.86%, mAP = 24.50% |
 
-Participants of Track `5` can refer to the above resources for more details and instructions.
+> **Hint:** Participants of Track `5` can refer to the above resources for more details and instructions.
 
 
 # Rules & Conditions
