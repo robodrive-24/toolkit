@@ -6,6 +6,9 @@
     - [Prepare for Training](#prepare-for-training)
 - [Evaluation Data](#blue_car-evaluation-data)
     - [Download](#download)
+        - [Tracks 1 to 3](#hotsprings-tracks-1-to-3)
+        - [Track 4](#hotsprings-track-4)
+        - [Track 5](#hotsprings-track-5)
     - [Prepare for Evaluation](#prepare-for-evaluation)
 - [References](#references)
 
@@ -26,6 +29,16 @@
         │   └── nuscenes_infos_val.pkl
         │
         │── robodrive-release
+        │   ├── brightness
+        │   ├── color_quant
+        │   ├── contrast
+        │   ├── ...
+        │   ├── zoom_blur
+        │   ├── ...
+        │   ├── robodrive-v1.0-test
+        │   └── sample_scenes.pkl
+        │
+        │── robodrive-depth
         │   ├── brightness
         │   ├── color_quant
         │   ├── contrast
@@ -124,14 +137,15 @@ In this competition, all participants are expected to adopt our **robustness pro
 
 ## Download
 
-### :hotsprings: Tracks `1` to `4`:
+### :hotsprings: Tracks `1` to `3`:
 
-Kindly download the RoboDrive camera-corruption sets from either one of the following sources.
+For participants in Track `1` (Robust BEV Detection), Track `2` (Robust Map Segmentation), or Track `3` (Robust Occupancy Prediction), kindly download the RoboDrive **camera-corruption sets** from either one of the following sources:
 
 | Type | Source 1 | Source 2 |
 | :-: | :-: | :-: |
 | Google Drive | [`link1`](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) | [`link2`](https://drive.google.com/file/d/1V2YTaBgqEEKKFiD7uQ2z3cf7GMHuUYk1/view?usp=sharing) |
-| Baidu Cloud | TBD | / |
+| OpenDataLab | TBD | / |
+| Baidu Disk | TBD | / |
 
 Unpack the compressed file(s) into `/data/sets/robodrive-release` and your folder structure should end up looking like this:
 
@@ -177,14 +191,72 @@ Unpack the compressed file(s) into `/data/sets/robodrive-release` and your folde
 > **Hints:** There are **18 corruption types** in total, therefore, you should find the same number of folders that contain the camera-corruption data.
 
 
+
+### :hotsprings: Track `4`
+
+For participants in Track `4` (Robust Depth Estimation), kindly download the RoboDrive **depth-corruption sets** from either one of the following sources:
+
+| Type | Source 1 | Source 2 |
+| :-: | :-: | :-: |
+| Google Drive | TBD | / |
+| OpenDataLab | TBD | / |
+| Baidu Disk | TBD | / |
+
+Unpack the compressed file(s) into `/data/sets/robodrive-depth` and your folder structure should end up looking like this:
+
+```shell
+└── robodrive-depth
+    │
+    ├── brightness
+    │   └── samples  <- contains the .jpg files from surrounding cameras 
+    │       ├── CAM_BACK
+    │       ├── CAM_BACK_LEFT
+    │       ├── CAM_BACK_RIGHT
+    │       ├── CAM_FRONT
+    │       ├── CAM_FRONT_LEFT
+    │       └── CAM_FRONT_RIGHT
+    │
+    ├── color_quant
+    ├── contrast
+    ├── dark
+    ├── defocus_blur
+    ├── elastic_transform
+    ├── fog
+    ├── frost
+    ├── gaussian_noise
+    ├── glass_blur
+    ├── impulse_noise
+    ├── iso_noise
+    ├── jpeg_compression
+    ├── motion_blur
+    ├── pixelate
+    ├── shot_noise
+    ├── snow
+    ├── zoom_blur
+    │
+    ├── robodrive-v1.0-test
+    │   ├── Usual files (e.g. attribute.json, calibrated_sensor.json etc.)
+    │   ├── lidarseg.json  <- contains the mapping of each .bin file to the token   
+    │   └── category.json  <- contains the categories of the labels (note that the 
+    │                         category.json from nuScenes v1.0 is overwritten)
+    │
+    └── sample_scenes.pkl
+```
+
+> **Hints:** There are **18 corruption types** in total, therefore, you should find the same number of folders that contain the camera-corruption data.
+
+
+
+
 ### :hotsprings: Track `5`
 
-Kindly download the RoboDrive sensor-corruption sets from either one of the following sources.
+For participants in Track `5` (Robust Multi-Modal BEV Detection), kindly download the RoboDrive **sensor-corruption sets** from either one of the following sources:
 
 | Type | Source 1 | Source 2 |
 | :-: | :-: | :-: |
 | Google Drive | [`link1`](https://drive.google.com/file/d/1Hw59VToELsB_bJ9qTGuyn9zdDzaZSnT4/view?usp=sharing) | [`link2`](https://drive.google.com/file/d/1wksmgzokYB-c9xGw8Ex6qN8R5mld-C_Q/view?usp=sharing) |
-| Baidu Cloud | TBD | / |
+| OpenDataLab | TBD | / |
+| Baidu Disk | TBD | / |
 
 Unpack the compressed file(s) into `/data/sets/robodrive-sensor` and your folder structure should end up looking like this:
 
