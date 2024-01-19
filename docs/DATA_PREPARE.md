@@ -141,11 +141,11 @@ In this competition, all participants are expected to adopt our **robustness pro
 
 For participants in Track `1` (Robust BEV Detection), Track `2` (Robust Map Segmentation), or Track `3` (Robust Occupancy Prediction), kindly download the RoboDrive **camera-corruption sets** from either one of the following sources:
 
-| Type | Source 1 | Source 2 |
+| Type | Phase 1 | Phase 2 |
 | :-: | :-: | :-: |
-| Google Drive | [`link1`](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) | [`link2`](https://drive.google.com/file/d/1V2YTaBgqEEKKFiD7uQ2z3cf7GMHuUYk1/view?usp=sharing) |
-| OpenDataLab | TBD | / |
-| Baidu Disk | TBD | / |
+| Google Drive | [`link1`](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) or [`link2`](https://drive.google.com/file/d/1V2YTaBgqEEKKFiD7uQ2z3cf7GMHuUYk1/view?usp=sharing) | `link1` or `link2` |
+| OpenDataLab | `link1` or `link2` | `link1` or `link2` |
+| Baidu Disk | `link1` or `link2` | `link1` or `link2` |
 
 Unpack the compressed file(s) into `/data/sets/robodrive-release` and your folder structure should end up looking like this:
 
@@ -196,11 +196,11 @@ Unpack the compressed file(s) into `/data/sets/robodrive-release` and your folde
 
 For participants in Track `4` (Robust Depth Estimation), kindly download the RoboDrive **depth-corruption sets** from either one of the following sources:
 
-| Type | Source 1 | Source 2 |
+| Type | Phase 1 | Phase 2 |
 | :-: | :-: | :-: |
-| Google Drive | TBD | / |
-| OpenDataLab | TBD | / |
-| Baidu Disk | TBD | / |
+| Google Drive | `link1` or `link2` | `link1` or `link2` |
+| OpenDataLab | `link1` or `link2` | `link1` or `link2` |
+| Baidu Disk | `link1` or `link2` | `link1` or `link2` |
 
 Unpack the compressed file(s) into `/data/sets/robodrive-depth` and your folder structure should end up looking like this:
 
@@ -252,11 +252,11 @@ Unpack the compressed file(s) into `/data/sets/robodrive-depth` and your folder 
 
 For participants in Track `5` (Robust Multi-Modal BEV Detection), kindly download the RoboDrive **sensor-corruption sets** from either one of the following sources:
 
-| Type | Source 1 | Source 2 |
+| Type | Phase 1 | Phase 2 |
 | :-: | :-: | :-: |
-| Google Drive | [`link1`](https://drive.google.com/file/d/1Hw59VToELsB_bJ9qTGuyn9zdDzaZSnT4/view?usp=sharing) | [`link2`](https://drive.google.com/file/d/1wksmgzokYB-c9xGw8Ex6qN8R5mld-C_Q/view?usp=sharing) |
-| OpenDataLab | TBD | / |
-| Baidu Disk | TBD | / |
+| Google Drive | [`link1`](https://drive.google.com/file/d/1Hw59VToELsB_bJ9qTGuyn9zdDzaZSnT4/view?usp=sharing) or [`link2`](https://drive.google.com/file/d/1wksmgzokYB-c9xGw8Ex6qN8R5mld-C_Q/view?usp=sharing) | `link1` or `link2`
+| OpenDataLab | `link1` or `link2` | `link1` or `link2` |
+| Baidu Disk | `link1` or `link2` | `link1` or `link2` |
 
 Unpack the compressed file(s) into `/data/sets/robodrive-sensor` and your folder structure should end up looking like this:
 
