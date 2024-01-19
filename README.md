@@ -68,7 +68,7 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 > **Note:** All timestamps are in the `AoE` (Anywhere on Earth) format.
 - `Dec 25 '23` - Team Up; Register for your team by filling in [this](https://forms.gle/hnaezVhEycPAjUD78) Google Form. 
 - `Jan 05 '24` - Release of training and evaluation data.
-- `Jan 15 '24` - Competition servers online @ [CodaLab](https://codalab.lisn.upsaclay.fr/) / [EvalAI](https://eval.ai/).
+- `Jan 15 '24` - Competition servers online @ [CodaLab](https://codalab.lisn.upsaclay.fr/).
 - `Mar 31 '24` - Phase `One` deadline.
 - `Apr 30 '24` - Phase `Two` deadline.
 - `May 17 '24` - Award decision announcement @ [ICRA 2024](https://2024.ieee-icra.org/).
@@ -119,9 +119,9 @@ The top-performing participants of this competition are honored with **cash awar
 
 | Award | Amount | Honor | 
 | :- | :- | :- | 
-| :1st_place_medal: 1st Place | to be updated | Official Certificate |
-| :2nd_place_medal: 2nd Place | to be updated | Official Certificate |
-| :3rd_place_medal: 3rd Place | to be updated | Official Certificate |
+| :1st_place_medal: 1st Place | To Be Announced | Official Certificate |
+| :2nd_place_medal: 2nd Place | To Be Announced | Official Certificate |
+| :3rd_place_medal: 3rd Place | To Be Announced | Official Certificate |
 
 > **Note:** The cash awards are donated by our sponsors. We reserve the right to examine the validity of each submission. For more information, kindly refer to the [Terms & Conditions](#balance_scale-terms--conditions) section.
 
@@ -138,7 +138,7 @@ To be updated.
 
 
 ## Citation
-If you find this competition helpful for your research, please kindly consider citing our papers:
+If you find this competition helpful for your research, kindly consider citing our papers:
 
 ```bibtex
 @article{xie2023robobev,
@@ -175,6 +175,29 @@ If you find this competition helpful for your research, please kindly consider c
     year = {2020}
 }
 ```
+
+In the meantime, kindly cite the technical reports of the [nuScenes](https://www.nuscenes.org/nuscenes) dataset and the [CodaLab](https://codalab.lisn.upsaclay.fr/) platform:
+```bibtex
+@inproceedings{caesar2020nuscenes,
+    title={nuScenes: A Multimodal Dataset for Autonomous Driving},
+    author={Holger Caesar and Varun Bankiti and Alex H. Lang and Sourabh Vora and Venice Erin Liong and Qiang Xu and Anush Krishnan and Yu Pan and Giancarlo Baldan and Oscar Beijbom},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    pages = {11621-11631},
+    year={2020}
+}
+```
+
+```bibtex
+@article{pavao2023codalab,
+    title = {CodaLab Competitions: An Open Source Platform to Organize Scientific Challenges},
+    author = {Adrien Pavão and Isabelle Guyon and Anne-Catherine Letournel and Dinh-Tuan Tran and Xavier Baró and Hugo Jair Escalante and Sergio Escalera and Tyler Thomas and Zhen Xu},
+    journal = {Journal of Machine Learning Research (JMLR)},
+    pages = {1-6},
+    year = {2023}
+}
+```
+
+
 
 
 ## :balance_scale: Terms & Conditions
