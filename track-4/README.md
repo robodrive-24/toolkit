@@ -119,7 +119,7 @@ color = self.loader(os.path.join(self.corruption_root, self.corruption, cam_samp
 # Baseline Results
 
 | Metric            | Results   |
-| ----------------- | -----     |
+| :---------------: | :----:    |
 | Abs Rel           | 0.348     |
 | Sq Rel            | 4.336     |
 | RMSE              | 7.102     |
@@ -134,10 +134,10 @@ color = self.loader(os.path.join(self.corruption_root, self.corruption, cam_samp
 Kindly cite the corresponding paper(s) once you use the baseline model in this track.
 ```bibtex
 @inproceedings{wei2023surrounddepth,
-  title={Surrounddepth: Entangling surrounding views for self-supervised multi-camera depth estimation},
+  title={SurroundDepth: Entangling Surrounding Views for Self-Supervised Multi-Camera Depth Estimation},
   author={Wei, Yi and Zhao, Linqing and Zheng, Wenzhao and Zhu, Zheng and Rao, Yongming and Huang, Guan and Lu, Jiwen and Zhou, Jie},
   booktitle={Conference on Robot Learning},
-  pages={539--549},
+  pages={539-549},
   year={2023},
   organization={PMLR}
 }
