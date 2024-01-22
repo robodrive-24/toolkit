@@ -66,10 +66,10 @@ The first challenge topic contains 18 real-world corruption types, ranging from 
 |:-:|:-|:-|
 | :minibus: | **Description** | Assessing the depth estimation robustness from multiple perspectives for comprehensive 3D scene perception |
 | :page_facing_up: | **Document & Instruction** | [`track-4/README.md`](https://github.com/robodrive-24/toolkit/blob/main/track-4/README.md)
-| :house: | **Evaluation Server** | To be updated |
+| :house: | **Evaluation Server** | https://codalab.lisn.upsaclay.fr/competitions/17226 |
 | :gear: | **Baseline** | [SurroundDepth](https://arxiv.org/abs/2204.03636) |
 | :octocat: | **Baseline Codebase** | https://github.com/weiyithu/SurroundDepth |
-| :bar_chart: | **Baseline Results** | To be updated |
+| :bar_chart: | **Baseline Results** | Abs Rel = 0.348, RMSE = 7.102, a1 = 0.623 |
 
 > **Hint:** Participants of Track `4` can refer to the above resources for more details and instructions.
 
