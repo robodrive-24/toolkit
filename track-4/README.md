@@ -118,15 +118,15 @@ color = self.loader(os.path.join(self.corruption_root, self.corruption, cam_samp
 
 # Baseline Results
 
-| Metric            | mIoU  |
-| ----------------- | ----- |
-| Abs Rel           | 0.35 |
-| Sq Rel            | 4.34 |
-| RMSE              | 7.10 |
-| RMSE Log          | 0.40 |
-| a1                | 0.62 |
-| a2                | 0.82 |
-| a3                | 0.90 |
+| Metric            | Results   |
+| ----------------- | -----     |
+| Abs Rel           | 0.35      |
+| Sq Rel            | 4.34      |
+| RMSE              | 7.10      |
+| RMSE Log          | 0.40      |
+| a1                | 0.62      |
+| a2                | 0.82      |
+| a3                | 0.90      |
 
 
 # References
