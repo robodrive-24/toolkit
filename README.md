@@ -101,6 +101,7 @@ Kindly refer to [GET_STARTED.md](docs/GET_STARTED.md) to learn more usage of thi
 
 ## :memo: Changelog
 
+- `Jan 22 '24` - The evaluation server of Track `4` is online. [`[Server4]`](https://codalab.lisn.upsaclay.fr/competitions/17226)
 - `Jan 15 '24` - The evaluation server of Track `5` is online. [`[Server5]`](https://codalab.lisn.upsaclay.fr/competitions/17137)
 - `Jan 15 '24` - The evaluation server of Track `3` is online. [`[Server3]`](https://codalab.lisn.upsaclay.fr/competitions/17063)
 - `Jan 15 '24` - The evaluation server of Track `2` is online. [`[Server2]`](https://codalab.lisn.upsaclay.fr/competitions/17062)
