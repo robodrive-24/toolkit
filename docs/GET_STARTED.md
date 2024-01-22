@@ -118,7 +118,7 @@ To ensure a fair comparison among all participants, we require:
 |  |
 |  |
 | :thinking: | **Q2:** ***"Are there any restrictions for the registration? For example, the number of team members."*** |
-| :blue_car: | **A2:**  Each team leader should make a **valid** registration for his/her team. Each participant can only be registered by **one** team. This is no restriction on the number of team members in a team.
+| :blue_car: | **A2:**  Each team leader should make a **valid** registration for his/her team. Each participant can only be registered by **one** team. There is no restriction on the number of team members in a team.
 |  |
 |  |
 | :thinking: | **Q3:** ***"Whether team members can be changed during the competition?"*** |
