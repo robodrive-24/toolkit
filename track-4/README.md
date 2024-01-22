@@ -1,4 +1,4 @@
-# Track 2 - Robust Map Segmentation
+# Track 4 - Robust Depth Estimation
 
 - [Preparation](#preparation)
   - [Installation](#gear-installation)
