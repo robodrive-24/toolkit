@@ -120,13 +120,13 @@ color = self.loader(os.path.join(self.corruption_root, self.corruption, cam_samp
 
 | Metric            | Results   |
 | ----------------- | -----     |
-| Abs Rel           | 0.35      |
-| Sq Rel            | 4.34      |
-| RMSE              | 7.10      |
-| RMSE Log          | 0.40      |
-| a1                | 0.62      |
-| a2                | 0.82      |
-| a3                | 0.90      |
+| Abs Rel           | 0.348     |
+| Sq Rel            | 4.336     |
+| RMSE              | 7.102     |
+| RMSE Log          | 0.396     |
+| a1                | 0.623     |
+| a2                | 0.819     |
+| a3                | 0.899     |
 
 
 # References
