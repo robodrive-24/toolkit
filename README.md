@@ -250,7 +250,7 @@ To ensure a fair comparison among all participants, we require:
 |  |
 |  |
 | :thinking: | **Q9:** ***"Can I use LiDAR data for Tracks `1` to `4`?"*** |
-| :blue_car: | **A9:**  No. Tracks `1` to `4` are **single-modality** tracks that only involve the use of camera data. The goal of these tracks is to probe the robustness of perception models under camera-related corruptions. Participants who are interested in **multi-modal robustness** (camera + LiDAR) can refer to Track `5` in this competition.
+| :blue_car: | **A9:**  Only raw LiDAR data is allowed for Tracks `1` to `4` in training (e.g., generate sparse depth map). During inference, Tracks `1` to `4` are **single-modality** tracks that only involve the use of camera data. The goal of these tracks is to probe the robustness of perception models under camera-related corruptions. Participants who are interested in **multi-modal robustness** (camera + LiDAR) can refer to Track `5` in this competition.
 |  |
 |  |
 | :thinking: | **Q10:** ***"Is it permissible to use self-supervised model pre-training (such as MoCo and MAE)?"*** |
@@ -275,6 +275,14 @@ To ensure a fair comparison among all participants, we require:
 |  |
 | :thinking: | **Q15:** ***"How many times can I make submissions to the server?"*** |
 | :blue_car: | **A15:**  For phase one (Jan. - Mar.), a team can submit up to **3** times per day and **99** times total. For phase two (Apr.), a team can submit up to **2** times per day and **49** times total. One team is affiliated with one CodaLab account only. Please **REFRAIN** from having multiple accounts for the same team.
+|  |
+|  |
+| :thinking: | **Q16:** ***" Can I use pretrained denoising or deblurring models during inference?"*** |
+| :blue_car: | **A16:**  No. The goal of the competition is to develop a more robust perception model and using pre-trained denoising models is out of the scope of this competition.
+|  |
+|  |
+| :thinking: | **Q17:** ***" Can I use augmentation other than the corruption methods used in the competition?"*** |
+| :blue_car: | **A17:**  Yes. You can use data augmentation methods that do **NOT** include the corruption synthesized algorithm used in the competition.
 |  |
 |  |
 | :thinking: | ... |
