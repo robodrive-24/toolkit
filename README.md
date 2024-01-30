@@ -250,7 +250,7 @@ To ensure a fair comparison among all participants, we require:
 |  |
 |  |
 | :thinking: | **Q9:** ***"Can I use LiDAR data for Tracks `1` to `4`?"*** |
-| :blue_car: | **A9:**  Only raw LiDAR data is allowed for Tracks `1` to `4` in training (e.g., generate sparse depth map). During inference, Tracks `1` to `4` are **single-modality** tracks that only involve the use of camera data. The goal of these tracks is to probe the robustness of perception models under camera-related corruptions. Participants who are interested in **multi-modal robustness** (camera + LiDAR) can refer to Track `5` in this competition.
+| :blue_car: | **A9:**  Only **RAW LiDAR points** data is allowed for Tracks `1` to `4` in **training** (e.g., generate sparse depth map). During **inference**, Tracks `1` to `4` are **single-modality** tracks that only involve the use of camera data. The goal of these tracks is to probe the robustness of perception models under camera-related corruptions. Participants who are interested in **multi-modal robustness** (camera + LiDAR) can refer to Track `5` in this competition.
 |  |
 |  |
 | :thinking: | **Q10:** ***"Is it permissible to use self-supervised model pre-training (such as MoCo and MAE)?"*** |
