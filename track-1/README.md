@@ -138,8 +138,8 @@ for data_info in data_infos:
     if self.corruption is not None:
         if data_info['scene_token'] in self.sample_scenes_dict[self.corruption]:
             sample_data_infos.append(data_info)
-        else:
-            sample_data_infos.append(data_info)
+    else:
+        sample_data_infos.append(data_info)
 ```
 
 
