@@ -282,7 +282,7 @@ To ensure a fair comparison among all participants, we require:
 |  |
 |  |
 | :thinking: | **Q17:** ***" Can I use augmentation other than the corruption methods used in the competition?"*** |
-| :blue_car: | **A17:**  Yes. You can use data augmentation methods that do **NOT** include the corruption synthesized algorithm used in the competition.
+| :blue_car: | **A17:**  Similar to Q7, you can use data augmentation methods that do **NOT** include the corruption simulation algorithms used in the competition. More details of the used corruptions can be found from [this](https://ldkong.com/PDF/2023_robobev.pdf) technical report.
 |  |
 |  |
 | :thinking: | ... |
