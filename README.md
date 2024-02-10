@@ -120,12 +120,18 @@ The top-performing participants of this competition are honored with **cash awar
 
 | Award | Amount | Honor | 
 | :- | :- | :- | 
-| :1st_place_medal: 1st Place | To Be Announced | Official Certificate |
-| :2nd_place_medal: 2nd Place | To Be Announced | Official Certificate |
-| :3rd_place_medal: 3rd Place | To Be Announced | Official Certificate |
+| :1st_place_medal: 1st Place | Cash Award $ 5000 | Official Certificate |
+| :2nd_place_medal: 2nd Place | Cash Award $ 3000 | Official Certificate |
+| :3rd_place_medal: 3rd Place | Cash Award $ 2000 | Official Certificate |
 
-> **Note:** The cash awards are donated by our sponsors. We reserve the right to examine the validity of each submission. For more information, kindly refer to the [Terms & Conditions](#balance_scale-terms--conditions) section.
+> **Note:** The cash awards are donated by our sponsors and are **shared** among five tracks. We reserve the right to examine the validity of each submission. For more information, kindly refer to the [Terms & Conditions](#balance_scale-terms--conditions) section.
 
+Additionally, we provide the following awards for 
+
+| Award | Honor | Condition |
+| :- | :- | :- | 
+| Innovative Award | Official Certificate | Solutions with excellent novelty |
+| Certificate of Participation | Official Certificate | Teams with submission records in both phases |
 
 
 ## License
