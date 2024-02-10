@@ -126,7 +126,7 @@ The top-performing participants of this competition are honored with **cash awar
 
 > **Note:** The cash awards are donated by our sponsors and are **shared** among five tracks. We reserve the right to examine the validity of each submission. For more information, kindly refer to the [Terms & Conditions](#balance_scale-terms--conditions) section.
 
-Additionally, we provide the following awards for 
+Additionally, we provide the following awards for participants that meet certain conditions.
 
 | Award | Honor | Condition |
 | :- | :- | :- | 
