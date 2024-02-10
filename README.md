@@ -141,7 +141,11 @@ This competition is under the <a rel="license" href="http://creativecommons.org/
 
 
 ## :heart: Sponsor
-To be updated.
+This competition is supported by [HUAWEI Noah's Ark Lab](https://www.noahlab.com.hk/#/home).
+><img src="docs/figs/logo_sponsor.png" width="35%"/><br/>
+> The Noah’s Ark Lab is the AI research center for Huawei Technologies, aiming to make significant contributions to both the company and society by innovating in artificial intelligence, data mining, and related fields.
+
+
 
 
 ## Citation
