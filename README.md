@@ -295,6 +295,10 @@ To ensure a fair comparison among all participants, we require:
 | :blue_car: | **A17:**  Similar to Q7, you can use data augmentation methods that do **NOT** include the corruption simulation algorithms used in the competition. More details of the used corruptions can be found from [this](https://ldkong.com/PDF/2023_robobev.pdf) technical report.
 |  |
 |  |
+| :thinking: | **Q18:** ***" What is the sensor corruptions in Track-5?"*** |
+| :blue_car: | **A17:**  For the camera sensor, we use camera corruptions by setting all the pixels to 0. For the LiDAR sensor, we use random points drop, drop points within certain view field angles, and beam drop.
+|  |
+|  |
 | :thinking: | ... |
 | :blue_car: | ... |
 
