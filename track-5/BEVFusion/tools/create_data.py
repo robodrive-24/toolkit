@@ -106,7 +106,7 @@ if __name__ == "__main__":
             max_sweeps=args.max_sweeps,
             load_augmented=load_augmented,
         )
-    if args.dataset == "nuscenes" and args.version != "v1.0-mini":
+    elif args.dataset == "nuscenes" and args.version != "v1.0-mini":
         train_version = f"{args.version}-trainval"
         nuscenes_data_prep(
             root_path=args.root_path,
