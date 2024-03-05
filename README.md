@@ -252,7 +252,7 @@ To ensure a fair comparison among all participants, we require:
 |  |
 |  |
 | :thinking: | **Q7:** ***"Can I use corruption augmentations during model training?"*** |
-| :blue_car: | **A7:**  No. The theme of this competition is to probe the **out-of-distribution robustness** of autonomous driving perception models. Therefore, all participants must **REFRAIN** from using any corruption simulations as data augmentations during the model training, including any atomic operation that comprises any one of the corruptions in this competition.
+| :blue_car: | **A7:**  **For Track 1-4**: No. The theme of this competition is to probe the **out-of-distribution robustness** of autonomous driving perception models. Therefore, all participants must **REFRAIN** from using any corruption simulations as data augmentations during the model training, including any atomic operation that comprises any one of the corruptions in this competition. **For Track 5**, there is no limitation on the augmentations.
 |  |
 |  |
 | :thinking: | **Q8:** ***"How should I configurate the model training? Are there any restrictions on model size, image size, loss function, optimizer, number of epochs, and so on?"***
@@ -296,7 +296,11 @@ To ensure a fair comparison among all participants, we require:
 |  |
 |  |
 | :thinking: | **Q18:** ***" What is the sensor corruptions in Track-5?"*** |
-| :blue_car: | **A17:**  For the camera sensor, we use camera corruptions by setting all the pixels to 0. For the LiDAR sensor, we use random points drop, drop points within certain view field angles, and beam drop.
+| :blue_car: | **A18:**  For the camera sensor, we use camera corruptions by setting all the pixels to 0. For the LiDAR sensor, we use random points drop, drop points within certain view field angles, and beam drop.
+|  |
+|  |
+| :thinking: | **Q19:** ***" What is the depth estimation metric for Track 4?"*** |
+| :blue_car: | **A19:**  We use **RELATIVE** depth estimation, not absolute depth estimation for evaluation.
 |  |
 |  |
 | :thinking: | ... |
