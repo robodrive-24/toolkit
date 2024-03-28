@@ -26,7 +26,13 @@ Kindly refer to [README.md](SurroundDepth/README.md) to set up environments and 
 
 We use data under the nuScenes `train` split as the training set and the RoboDrive robustness probing data as the evaluation set. For training data preparation, kindly refer to [README.md](SurroundDepth/README.md). 
 
-For evaluation data preparation, kindly download the dataset from [this](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) Google Drive link and organize the folder structure as follows:
+For evaluation data preparation, kindly download the dataset from the following resources:
+
+| Type | Phase 1 | Phase 2 |
+| :-: | :-: | :-: |
+| Google Drive | [`link1`](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) or [`link2`](https://drive.google.com/file/d/1V2YTaBgqEEKKFiD7uQ2z3cf7GMHuUYk1/view?usp=sharing) | [`link1`](https://drive.google.com/file/d/1wBg0RhjboUmBs6Ibyq-d8qNzZTgtalwV/view?usp=sharing) or `link2` |
+
+Uncompress the downloaded dataset and organize the folder structure as follows:
 
 ```bash
 .
@@ -116,7 +122,9 @@ color = self.loader(os.path.join(self.corruption_root, self.corruption, cam_samp
 ```
 
 
-# Baseline Results
+## Baseline Results
+
+### Phase 1
 
 | Metric            | Results   |
 | :---------------: | :----:    |
@@ -127,6 +135,18 @@ color = self.loader(os.path.join(self.corruption_root, self.corruption, cam_samp
 | a1                | 0.623     |
 | a2                | 0.819     |
 | a3                | 0.899     |
+
+### Phase 2
+
+| Metric            | Results   |
+| :---------------: | :----:    |
+| Abs Rel           | 0.304     |
+| Sq Rel            | 3.060     |
+| RMSE              | 8.527     |
+| RMSE Log          | 0.400     |
+| a1                | 0.544     |
+| a2                | 0.784     |
+| a3                | 0.891     |
 
 
 # References
