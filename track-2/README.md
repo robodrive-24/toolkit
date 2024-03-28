@@ -26,7 +26,13 @@ Kindly refer to [INSTALL.md](BEVerse/docs/installation.md) to set up environment
 
 We use data under the nuScenes `train` split as the training set and the RoboDrive robustness probing data as the evaluation set. For training data preparation, kindly refer to [PREPARE_DATASET.md](BEVerse/docs/data_preparation.md). 
 
-For evaluation data preparation, kindly download the dataset from [this](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) Google Drive link and organize the folder structure as follows:
+For evaluation data preparation, kindly download the dataset from the following resources:
+
+| Type | Phase 1 | Phase 2 |
+| :-: | :-: | :-: |
+| Google Drive | [`link1`](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) or [`link2`](https://drive.google.com/file/d/1V2YTaBgqEEKKFiD7uQ2z3cf7GMHuUYk1/view?usp=sharing) | [`link1`](https://drive.google.com/file/d/1wBg0RhjboUmBs6Ibyq-d8qNzZTgtalwV/view?usp=sharing) or `link2` |
+
+Uncompress the downloaded dataset and organize the folder structure as follows:
 
 ```bash
 .
@@ -159,7 +165,9 @@ if self.corruption is not None:
 ```
 
 
-# Baseline Results
+## Baseline Results
+
+### Phase 1
 
 | Corruption        | mIoU  |
 | ----------------- | ----- |
@@ -181,6 +189,30 @@ if self.corruption is not None:
 | ISO Noise         | 0.032 |
 | Pixelate          | 0.403 |
 | JPEG              | 0.319 |
+
+
+### Phase 2
+
+| Corruption        | mIoU  |
+| ----------------- | ----- |
+| Bright            | 0.214 |
+| Dark              | 0.141 |
+| Fog               | 0.193 |
+| Frost             | 0.068 |
+| Snow              | 0.032 |
+| Contrast          | 0.037 |
+| Defocus Blur      | 0.189 |
+| Glass Blur        | 0.279 |
+| Motion Blur       | 0.092 |
+| Zoom Blur         | 0.176 |
+| Elastic Transform | 0.446 |
+| Color Quant       | 0.114 |
+| Gaussian Noise    | 0.052 |
+| Impluse Noise     | 0.021 |
+| Shot Noise        | 0.024 |
+| ISO Noise         | 0.096 |
+| Pixelate          | 0.368 |
+| JPEG              | 0.280 |
 
 
 # References
