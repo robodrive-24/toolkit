@@ -26,7 +26,13 @@ Kindly refer to the [INSTALL.md](./SurroundOcc/docs/install.md) to set up enviro
 
 We use data under the nuScenes `train` split as the training set and the RoboDrive robustness probing data as the evaluation sets. For training data preparation, kindly refer to [DATA_PREPARE.md](./SurroundOcc/docs/data.md). 
 
-For evaluation data preparation, kindly download the dataset from [this](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) Google Drive link and organize the folder structure as follows:
+For evaluation data preparation, kindly download the dataset from the following resources:
+
+| Type | Phase 1 | Phase 2 |
+| :-: | :-: | :-: |
+| Google Drive | [`link1`](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) or [`link2`](https://drive.google.com/file/d/1V2YTaBgqEEKKFiD7uQ2z3cf7GMHuUYk1/view?usp=sharing) | [`link1`](https://drive.google.com/file/d/1wBg0RhjboUmBs6Ibyq-d8qNzZTgtalwV/view?usp=sharing) or `link2` |
+
+Uncompress the downloaded dataset and organize the folder structure as follows:
 
 ```bash
 .
@@ -149,6 +155,8 @@ for data_info in data_infos:
 
 ## Baseline Results
 
+### Phase 1
+
 | Corruption        | SC IoU | SSC mIoU | barrier | bicycle | car    | const. veh | motorcycle | pedestrain | traffic cone | trailer | trunk | drive. suf | other flat | sidewalk | terrian | manmade | vegetation |
 | ----------------- | ------ | -------- | ------- | ------- | ------ | ---------- | ---------- | ---------- | ------------ | ------- | ----- | ---------- | ---------- | -------- | ------- | ------- | ---------- |
 | Bright | 0.2923 | 0.1613 | 0.2028 | 0.1209 | 0.2327 | 0.2937 | 0.0096 | 0.1923 | 0.1173 | 0.0766 | 0.0000 | 0.2356 | 0.3451 | 0.0438 | 0.1908 | 0.2145 | 0.1083 |
@@ -169,6 +177,11 @@ for data_info in data_infos:
 | ISO Noise | 0.2334 | 0.1114 | 0.0786 | 0.0076 | 0.2046 | 0.2726 | 0.0891 | 0.0169 | 0.0294 | 0.0223 | 0.0271 | 0.1519 | 0.2580 | 0.1207 | 0.1684 | 0.0865 | 0.0855 |
 | Pixelate | 0.3012 | 0.1677 | 0.0777 | 0.0415 | 0.3107 | 0.3057 | 0.0879 | 0.1745 | 0.0428 | 0.0518 | 0.0559 | 0.1871 | 0.3377 | 0.2475 | 0.2573 | 0.1448 | 0.1462 |
 | JPEG | 0.2549 | 0.1287 | 0.0781 | 0.0189 | 0.1998 | 0.2455 | 0.0932 | 0.1151 | 0.0686 | 0.0530 | 0.1465 | 0.1369 | 0.2963 | 0.1495 | 0.1814 | 0.1052 | 0.0784 |
+
+### Phase 2
+
+To be updated.
+
 
 
 # References
