@@ -49,11 +49,14 @@ class CorruptionDataset(MonoDataset):
         self.match_path = 'data/nuscenes/match'
 
 
-
-        with open('datasets/robodrive/{}.txt'.format(self.corruption), 'r') as f:
-        # for debug usage
-        # with open('datasets/robodrive/test.txt', 'r') as f:
-            self.filenames = f.readlines()
+        if not self.opt.phase2:
+            with open('datasets/robodrive/{}.txt'.format(self.corruption), 'r') as f:
+            # for debug usage
+            # with open('datasets/robodrive/test.txt', 'r') as f:
+                self.filenames = f.readlines()
+        else:
+            with open('datasets/robodrive-phase2/{}.txt'.format(self.corruption), 'r') as f:
+                self.filenames = f.readlines()
 
         self.camera_ids = ['front', 'front_left', 'back_left', 'back', 'back_right', 'front_right']
         self.camera_names = ['CAM_FRONT', 'CAM_FRONT_LEFT', 'CAM_BACK_LEFT', 'CAM_BACK', 'CAM_BACK_RIGHT', 'CAM_FRONT_RIGHT']

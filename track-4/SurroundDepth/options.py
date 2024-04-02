@@ -269,6 +269,8 @@ class MonodepthOptions:
                                  default="brightness",
                                  help="corruption type name",
                                  type=str)
+        self.parser.add_argument("--phase2",
+                                 action="store_true")
 
         self.parser.add_argument("--local_rank", default=0,type=int)
 
