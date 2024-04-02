@@ -26,7 +26,13 @@ Kindly refer to [GET_STARTED.md](BEVFusion/README.md) to set up environments and
 
 We use data under the nuScenes `train` split as the training set and the RoboDrive robustness probing data as the evaluation sets. For training data preparation, kindly refer to [NUSCENES_DET.md](https://github.com/open-mmlab/mmdetection3d/blob/master/docs/en/datasets/nuscenes_det.md). 
 
-For evaluation data preparation, kindly download the dataset from [this](https://drive.google.com/file/d/1Hw59VToELsB_bJ9qTGuyn9zdDzaZSnT4/view?usp=sharing) Google Drive link and organize the folder structure as follows:
+For evaluation data preparation, kindly download the dataset from the following resources:
+
+| Type | Phase 1 | Phase 2 |
+| :-: | :-: | :-: |
+| Google Drive | [`link1`](https://drive.google.com/file/d/1Hw59VToELsB_bJ9qTGuyn9zdDzaZSnT4/view?usp=sharing) or [`link2`](https://drive.google.com/file/d/1wksmgzokYB-c9xGw8Ex6qN8R5mld-C_Q/view?usp=sharing) | [`link1`](https://drive.google.com/file/d/1Urcxc_Rb4Il9TjTtqjBvlpwtlJS8kFsb/view?usp=sharing) or `link2`
+
+Uncompress the downloaded dataset and organize the folder structure as follows:
 
 ```bash
 .
@@ -100,14 +106,20 @@ Finally, upload the compressed file to Track `5`'s [evaluation server](https://c
 
 # Customized Dataset
 
-To customize your own dataset, simply build your dataset based on `RoboDriveDataset` from [this](BEVFusion/mmdet3d/datasets/robodrive_dataset.py#L19) line. We simply modified the data path to load image and LiDAR data.
+To customize your own dataset, simply build your dataset based on `RoboDriveDataset` from [this](BEVFusion/mmdet3d/datasets/robodrive_dataset.py#L19) line. We simply modified the data path to load the image and LiDAR data.
 
 
 ## Baseline Results
 
+### Phase 1
 | Model             | NDS    | mAP    | mATE   | mASE   | mAOE   | mAVE   | mAAE   |
 | ----------------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | BEVFusion         | 0.4285 | 0.2448 | 0.4012 | 0.2910 | 0.4928 | 0.5289 | 0.2251 |
+
+### Phase 2
+| Model             | NDS    | mAP    | mATE   | mASE   | mAOE   | mAVE   | mAAE   |
+| ----------------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| BEVFusion         | 0.3913 | 0.2159 | 0.4402 | 0.2996 | 0.5297 | 0.6462 | 0.2506 |
 
 
 # References

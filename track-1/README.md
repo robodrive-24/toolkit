@@ -26,7 +26,13 @@ Kindly refer to [GET_STARTED.md](./BEVFormer/docs/getting_started.md) to set up 
 
 We use data under the nuScenes `train` split as the training set and the RoboDrive robustness probing data as the evaluation sets. For training data preparation, kindly refer to [PREPARE_DATASET.md](./BEVFormer/docs/prepare_dataset.md). 
 
-For evaluation data preparation, kindly download the dataset from [this](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) Google Drive link and organize the folder structure as follows:
+For evaluation data preparation, kindly download the dataset from the following resources:
+
+| Type | Phase 1 | Phase 2 |
+| :-: | :-: | :-: |
+| Google Drive | [`link1`](https://drive.google.com/file/d/1FEiBlX9SV69DEaHVfpKcWjkTZQAVSfvw/view?usp=drive_link) or [`link2`](https://drive.google.com/file/d/1V2YTaBgqEEKKFiD7uQ2z3cf7GMHuUYk1/view?usp=sharing) | [`link1`](https://drive.google.com/file/d/1wBg0RhjboUmBs6Ibyq-d8qNzZTgtalwV/view?usp=sharing) or `link2` |
+
+Uncompress the downloaded dataset and organize the folder structure as follows:
 
 ```bash
 .
@@ -143,7 +149,9 @@ for data_info in data_infos:
 ```
 
 
-# Baseline Results
+## Baseline Results
+
+### Phase 1
 
 | Corruption        | NDS    | mAP    | mATE   | mASE   | mAOE   | mAVE   | mAAE   |
 | ----------------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -165,6 +173,12 @@ for data_info in data_infos:
 | ISO Noise         | 0.2505 | 0.1076 | 0.9036 | 0.3045 | 0.5644 | 1.5776 | 0.2607 |
 | Pixelate          | 0.3499 | 0.2668 | 0.8558 | 0.3047 | 0.4907 | 1.1205 | 0.1831 |
 | JPEG              | 0.4304 | 0.2552 | 0.7405 | 0.2798 | 0.2946 | 0.3910 | 0.2666 |
+
+
+### Phase 2
+
+To be updated.
+
 
 
 # References
