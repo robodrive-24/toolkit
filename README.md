@@ -71,33 +71,33 @@ We are glad to announce the winning teams of the [2024 RoboDrive Challenge](http
 
 #### Track 1: Robust BEV Detection
 
-- Xu Cao, Hao Lu, and Ying-Cong Chen. “[TSMA-BEV: Towards Robust Multi-Camera 3D Object Detection through Temporal Sequence Mix Augmentation]()”, Technical Report, 2024.
-- Caixin Kang, Xinning Zhou, Chengyang Ying, Wentao Shang, Xingxing Wei, and Yinpeng Dong. “[MVE: Multi-View Enhancer for Robust Bird's Eye View Object Detection]()”, Technical Report, 2024.
-- Bo Yang, Shengyin Jiang, Zeliang Ma, Dengyi Ji, and Haiwen Li. “[FocalAngle3D: An Angle-Enhanced Two-Stage Model for 3D Detection]()”, Technical Report, 2024.
+- Xu Cao, Hao Lu, and Ying-Cong Chen. “[TSMA-BEV: Towards Robust Multi-Camera 3D Object Detection through Temporal Sequence Mix Augmentation](https://github.com/robodrive-24/toolkit/blob/main/docs/track1_deep_vision.pdf)”, Technical Report, 2024.
+- Caixin Kang, Xinning Zhou, Chengyang Ying, Wentao Shang, Xingxing Wei, and Yinpeng Dong. “[MVE: Multi-View Enhancer for Robust Bird's Eye View Object Detection](https://github.com/robodrive-24/toolkit/blob/main/docs/track1_ponyville.pdf)”, Technical Report, 2024.
+- Bo Yang, Shengyin Jiang, Zeliang Ma, Dengyi Ji, and Haiwen Li. “[FocalAngle3D: An Angle-Enhanced Two-Stage Model for 3D Detection](https://github.com/robodrive-24/toolkit/blob/main/docs/track1_cyber_bev.pdf)”, Technical Report, 2024.
 
 #### Track 2: Robust Map Segmentation
 
-- Xingliang Huang and Yu Tian. “[Models and Data Enhancements for Robust Map Segmentation in Autonomous Driving]()”, Technical Report, 2024.
-- Xiaoshuai Hao, Yifan Yang, Hui Zhang, Mengchuan Wei, Yi Zhou, Haimei Zhao, and Jing Zhang. “[Using Temporal Information and Mixing-Based Data Augmentations for Robust HD Map Construction]()”, Technical Report, 2024.
-- Genghua Kou, Fan Jia, Yingfei Liu, Tiancai Wang, and Ying Li. “[MultiViewRobust: Scaling Up Pretrained Models for Robust Map Segmentation]()”, Technical Report, 2024.
+- Xingliang Huang and Yu Tian. “[Models and Data Enhancements for Robust Map Segmentation in Autonomous Driving](https://github.com/robodrive-24/toolkit/blob/main/docs/track2_safe_drive_ssr.pdf)”, Technical Report, 2024.
+- Xiaoshuai Hao, Yifan Yang, Hui Zhang, Mengchuan Wei, Yi Zhou, Haimei Zhao, and Jing Zhang. “[Using Temporal Information and Mixing-Based Data Augmentations for Robust HD Map Construction](https://github.com/robodrive-24/toolkit/blob/main/docs/track2_crazy_friday.pdf)”, Technical Report, 2024.
+- Genghua Kou, Fan Jia, Yingfei Liu, Tiancai Wang, and Ying Li. “[MultiViewRobust: Scaling Up Pretrained Models for Robust Map Segmentation](https://github.com/robodrive-24/toolkit/blob/main/docs/track2_samsung.pdf)”, Technical Report, 2024.
 
 #### Track 3: Robust Occupancy Prediction
 
-- Jinke Li, Xiao He, and Xiaoqiang Cheng. “[ViewFormer: Spatiotemporal Modeling for Robust Occupancy Prediction]()”, Technical Report, 2024.
-- Bingyang Zhang, Lirong Zhao, Dianlei Ding, Fangsheng Liu, Yixiang Yan, and Hongming Wang. “[Robust Occupancy Prediction based on Enhanced SurroundOcc]()”, Technical Report, 2024.
-- Nanfei Ye, Lun Luo, Xun Wu,  Yubo Tian, Zhe Cao, Yunfan Li, Yiwei Zuo, Wenjie Liu, and Yi Ren. “[Improving Out-of-Distribution Robustness of Occupancy Prediction Networks with Advanced Loss Functions]()”, Technical Report, 2024.
+- Jinke Li, Xiao He, and Xiaoqiang Cheng. “[ViewFormer: Spatiotemporal Modeling for Robust Occupancy Prediction](https://github.com/robodrive-24/toolkit/blob/main/docs/track3_view_former.pdf)”, Technical Report, 2024.
+- Bingyang Zhang, Lirong Zhao, Dianlei Ding, Fangsheng Liu, Yixiang Yan, and Hongming Wang. “[Robust Occupancy Prediction based on Enhanced SurroundOcc](https://github.com/robodrive-24/toolkit/blob/main/docs/track3_apec_blue.pdf)”, Technical Report, 2024.
+- Nanfei Ye, Lun Luo, Xun Wu,  Yubo Tian, Zhe Cao, Yunfan Li, Yiwei Zuo, Wenjie Liu, and Yi Ren. “[Improving Out-of-Distribution Robustness of Occupancy Prediction Networks with Advanced Loss Functions](https://github.com/robodrive-24/toolkit/blob/main/docs/track3_hm_unilab.pdf)”, Technical Report, 2024.
 
 #### Track 4: Robust Depth Estimation
 
-- Yifan Mao, Ming Li, Jian Liu, Jiayang Liu, Zihan Qin, Chunxi Chu, Jialei Xu, Wenbo Zhao, Junjun Jiang, and Xianming Liu. “[DINO-SD for Robust Multi-View Supervised Depth Estimation]()”, Technical Report, 2024.
-- Ziyan Wang, Chiwei Li, Shilong Li, Chendong Yuan,  Songyue Yang, Wentao Liu, Peng Chen, and Bin Zhou. “[Fusing Features Across Scales: A Semi-Supervised Attention-Based Approach for Robust Depth Estimation]()”, Technical Report, 2024.
-- Yubo Wang, Chi Zhang, and Jianhang Sun. “[SD-ViT: Performance and Robustness Enhancements of MonoViT for Multi-View Depth Estimation]()”, Technical Report, 2024.
+- Yifan Mao, Ming Li, Jian Liu, Jiayang Liu, Zihan Qin, Chunxi Chu, Jialei Xu, Wenbo Zhao, Junjun Jiang, and Xianming Liu. “[DINO-SD for Robust Multi-View Supervised Depth Estimation](https://github.com/robodrive-24/toolkit/blob/main/docs/track4_hit_aiia.pdf)”, Technical Report, 2024.
+- Ziyan Wang, Chiwei Li, Shilong Li, Chendong Yuan,  Songyue Yang, Wentao Liu, Peng Chen, and Bin Zhou. “[Fusing Features Across Scales: A Semi-Supervised Attention-Based Approach for Robust Depth Estimation](https://github.com/robodrive-24/toolkit/blob/main/docs/track4_buaa_trans.pdf)”, Technical Report, 2024.
+- Yubo Wang, Chi Zhang, and Jianhang Sun. “[SD-ViT: Performance and Robustness Enhancements of MonoViT for Multi-View Depth Estimation](https://github.com/robodrive-24/toolkit/blob/main/docs/track4_custzs.pdf)”, Technical Report, 2024.
 
 #### Track 5: Robust Multi-Modal BEV Detection
 
-- Hai Chen, Xiao Yang, and Lizhong Wang. “[ASF: Robust 3D Object Detection by Solving Sensor Failures]()”, Technical Report, 2024.
-- Caixin Kang, Xinning Zhou, Chengyang Ying, Wentao Shang, Xingxing Wei, and Yinpeng Dong. “[Cross-Modal Transformers for Robust Multi-Modal BEV Detection]()”, Technical Report, 2024.
-- Dongyi Fu, Yongchun Lin, Huitong Yang, Haoang Li, Yadan Luo, Xianjing Cheng, and Yong Xu. “[RobuAlign: Robust Alignment in Multi-Modal 3D Object Detection]()”, Technical Report, 2024.
+- Hai Chen, Xiao Yang, and Lizhong Wang. “[ASF: Robust 3D Object Detection by Solving Sensor Failures](https://github.com/robodrive-24/toolkit/blob/main/docs/track5_safedrive_promax.pdf)”, Technical Report, 2024.
+- Caixin Kang, Xinning Zhou, Chengyang Ying, Wentao Shang, Xingxing Wei, and Yinpeng Dong. “[Cross-Modal Transformers for Robust Multi-Modal BEV Detection](https://github.com/robodrive-24/toolkit/blob/main/docs/track5_ponyville.pdf)”, Technical Report, 2024.
+- Dongyi Fu, Yongchun Lin, Huitong Yang, Haoang Li, Yadan Luo, Xianjing Cheng, and Yong Xu. “[RobuAlign: Robust Alignment in Multi-Modal 3D Object Detection](https://github.com/robodrive-24/toolkit/blob/main/docs/track5_hitsz_robodrive.pdf)”, Technical Report, 2024.
 
 
 
