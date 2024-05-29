@@ -36,6 +36,71 @@ Welcome to [The RoboDrive Challenge](https://robodrive-24.github.io/)! :wave:
 > ICRA is the IEEE Robotics and Automation Society's flagship conference. ICRA 2024 will be held from May 13th to 17th, 2024, in Yokohama, Japan.
 
 
+## :trophy: Winning Team
+We are glad to announce the winning teams of the [2024 RoboDrive Challenge](https://robodrive-24.github.io/).
+
+- **Track 1: Robust BEV Detection**
+  - :1st_place_medal: `DeepVision`, :2nd_place_medal: `Ponyville Autonauts Ltd`, :3rd_place_medal: `CyberBEV` 
+- **Track 2: Robust Map Segmentation**
+  - :1st_place_medal: `SafeDrive-SSR`, :2nd_place_medal: `CrazyFriday`, :3rd_place_medal: `Samsung Research`
+- **Track 3: Robust Occupancy Prediction**
+  - :1st_place_medal: `ViewFormer`, :2nd_place_medal: `APEC Blue`, :3rd_place_medal: `hm.unilab`
+- **Track 4: Robust Depth Estimation**
+  - :1st_place_medal: `HIT-AIIA`, :2nd_place_medal: `BUAA-Trans`, :3rd_place_medal: `CUSTZS`
+- **Track 5: Robust Multi-Modal BEV Detection**
+  - :1st_place_medal: `safedrive-promax`, :2nd_place_medal: `Ponyville Autonauts Ltd`, :3rd_place_medal: `HITSZrobodrive`
+
+
+## :books: Technical Report
+
+### Competition Report
+
+"[The RoboDrive Challenge: Drive Anytime Anywhere in Any Condition](https://arxiv.org/abs/2405.08816)", Technical Report, 2024.
+
+```bibtex
+@article{kong2024robodrive_challenge,
+    title = {The RoboDrive Challenge: Drive Anytime Anywhere in Any Condition},
+    author = {Lingdong Kong and Shaoyuan Xie and Hanjiang Hu and Yaru Niu and Wei Tsang Ooi and Benoit R. Cottereau and Lai Xing Ng and Yuexin Ma and Wenwei Zhang and Liang Pan and Kai Chen and Ziwei Liu and Weichao Qiu and Wei Zhang and Xu Cao and Hao Lu and Ying-Cong Chen and Caixin Kang and Xinning Zhou and Chengyang Ying and Wentao Shang and Xingxing Wei and Yinpeng Dong and Bo Yang and Shengyin Jiang and Zeliang Ma and Dengyi Ji and Haiwen Li and Xingliang Huang and Yu Tian and Genghua Kou and Fan Jia and Yingfei Liu and Tiancai Wang and Ying Li and Xiaoshuai Hao and Yifan Yang and Hui Zhang and Mengchuan Wei and Yi Zhou and Haimei Zhao and Jing Zhang and Jinke Li and Xiao He and Xiaoqiang Cheng and Bingyang Zhang and Lirong Zhao and Dianlei Ding and Fangsheng Liu and Yixiang Yan and Hongming Wang and Nanfei Ye and Lun Luo and Yubo Tian and Yiwei Zuo and Zhe Cao and Yi Ren and Yunfan Li and Wenjie Liu and Xun Wu and Yifan Mao and Ming Li and Jian Liu and Jiayang Liu and Zihan Qin and Cunxi Chu and Jialei Xu and Wenbo Zhao and Junjun Jiang and Xianming Liu and Ziyan Wang and Chiwei Li and Shilong Li and Chendong Yuan and Songyue Yang and Wentao Liu and Peng Chen and Bin Zhou and Yubo Wang and Chi Zhang and Jianhang Sun and Hai Chen and Xiao Yang and Lizhong Wang and Dongyi Fu and Yongchun Lin and Huitong Yang and Haoang Li and Yadan Luo and Xianjing Cheng and Yong Xu},
+    journal = {arXiv preprint arXiv:2405.08816}, 
+    year = {2024},
+}
+```
+
+
+### Track Reports
+
+#### Track 1: Robust BEV Detection
+
+- Xu Cao, Hao Lu, and Ying-Cong Chen. “[TSMA-BEV: Towards Robust Multi-Camera 3D Object Detection through Temporal Sequence Mix Augmentation]()”, Technical Report, 2024.
+- Caixin Kang, Xinning Zhou, Chengyang Ying, Wentao Shang, Xingxing Wei, and Yinpeng Dong. “[MVE: Multi-View Enhancer for Robust Bird's Eye View Object Detection]()”, Technical Report, 2024.
+- Bo Yang, Shengyin Jiang, Zeliang Ma, Dengyi Ji, and Haiwen Li. “[FocalAngle3D: An Angle-Enhanced Two-Stage Model for 3D Detection]()”, Technical Report, 2024.
+
+#### Track 2: Robust Map Segmentation
+
+- Xingliang Huang and Yu Tian. “[Models and Data Enhancements for Robust Map Segmentation in Autonomous Driving]()”, Technical Report, 2024.
+- Xiaoshuai Hao, Yifan Yang, Hui Zhang, Mengchuan Wei, Yi Zhou, Haimei Zhao, and Jing Zhang. “[Using Temporal Information and Mixing-Based Data Augmentations for Robust HD Map Construction]()”, Technical Report, 2024.
+- Genghua Kou, Fan Jia, Yingfei Liu, Tiancai Wang, and Ying Li. “[MultiViewRobust: Scaling Up Pretrained Models for Robust Map Segmentation]()”, Technical Report, 2024.
+
+#### Track 3: Robust Occupancy Prediction
+
+- Jinke Li, Xiao He, and Xiaoqiang Cheng. “[ViewFormer: Spatiotemporal Modeling for Robust Occupancy Prediction]()”, Technical Report, 2024.
+- Bingyang Zhang, Lirong Zhao, Dianlei Ding, Fangsheng Liu, Yixiang Yan, and Hongming Wang. “[Robust Occupancy Prediction based on Enhanced SurroundOcc]()”, Technical Report, 2024.
+- Nanfei Ye, Lun Luo, Xun Wu,  Yubo Tian, Zhe Cao, Yunfan Li, Yiwei Zuo, Wenjie Liu, and Yi Ren. “[Improving Out-of-Distribution Robustness of Occupancy Prediction Networks with Advanced Loss Functions]()”, Technical Report, 2024.
+
+#### Track 4: Robust Depth Estimation
+
+- Yifan Mao, Ming Li, Jian Liu, Jiayang Liu, Zihan Qin, Chunxi Chu, Jialei Xu, Wenbo Zhao, Junjun Jiang, and Xianming Liu. “[DINO-SD for Robust Multi-View Supervised Depth Estimation]()”, Technical Report, 2024.
+- Ziyan Wang, Chiwei Li, Shilong Li, Chendong Yuan,  Songyue Yang, Wentao Liu, Peng Chen, and Bin Zhou. “[Fusing Features Across Scales: A Semi-Supervised Attention-Based Approach for Robust Depth Estimation]()”, Technical Report, 2024.
+- Yubo Wang, Chi Zhang, and Jianhang Sun. “[SD-ViT: Performance and Robustness Enhancements of MonoViT for Multi-View Depth Estimation]()”, Technical Report, 2024.
+
+#### Track 5: Robust Multi-Modal BEV Detection
+
+- Hai Chen, Xiao Yang, and Lizhong Wang. “[ASF: Robust 3D Object Detection by Solving Sensor Failures]()”, Technical Report, 2024.
+- Caixin Kang, Xinning Zhou, Chengyang Ying, Wentao Shang, Xingxing Wei, and Yinpeng Dong. “[Cross-Modal Transformers for Robust Multi-Modal BEV Detection]()”, Technical Report, 2024.
+- Dongyi Fu, Yongchun Lin, Huitong Yang, Haoang Li, Yadan Luo, Xianjing Cheng, and Yong Xu. “[RobuAlign: Robust Alignment in Multi-Modal 3D Object Detection]()”, Technical Report, 2024.
+
+
+
 
 # Outline
 - [Useful Info](#information_source-useful-info)
